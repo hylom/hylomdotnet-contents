@@ -9,11 +9,11 @@ publishDate: 2020-05-06T18:54:27+09:00
 
 　本来はアプリ内で電子書籍ファイルを開けると良いのですが、ちゃんとした電子書籍ビューアを作るのは正直大変なので、とりあえずサムネイル画像をダブルクリックすると外部アプリケーションでそのファイルを開くようにしてみます。
 
- - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
- - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
- - Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く
+・[GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
+・[Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
+・[Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
+・[Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
+・Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く
 
 
 # Node.jsプログラムからファイルを指定したアプリで開く

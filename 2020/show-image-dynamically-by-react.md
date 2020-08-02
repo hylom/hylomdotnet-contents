@@ -9,11 +9,11 @@ publishDate: 2020-05-06T16:14:38+09:00
 
 　GWなのでReactで電子書籍管理アプリを作ってみようという話の3日目です。
 
- - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示
- - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
- - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+・[GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
+・[Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
+・Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示
+・[Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
+・[Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
 # PDFからのサムネイル画像の作成と読み込み
 
@@ -205,7 +205,9 @@ GET /api/v1/books/0f276cdfc8a2c99c988ef7b88141f377%2FOP%E3%82%A2%E3%83%B3%E3%83%
 
 
 
-　ZIP形式の電子書籍ファイルについても、同じようにサムネイル画像を表示したい。アルゴリズム的にはZIPファイル内のファイルをスキャンして最初に見つかったjpegファイルを取り出せばOKだろう。モジュールとしてはJSZip（[　サムネイル取得関連のメソッドを整理し、ZIP用とPDF用に分割。すんなりとZIPファイル内から最初の画像ファイルを取得するコードを実装できた（[https://github.com/hylom/ebmgr/blob/8b13a855070acd100bcd8475de6b14a0e7939314/ebmgr.js コード全文](https://github.com/hylom/ebmgr/blob/8b13a855070acd100bcd8475de6b14a0e7939314/ebmgr.js コード全文)(https://www.npmjs.com/package/jszip]）とADM-ZIP（[https://www.npmjs.com/package/adm-zip](https://www.npmjs.com/package/adm-zip)）というものが見つかった。利用者数はどちらも十分に多く、どっちを選択しても問題なさそうだが、ADM-ZIPはほかに依存するモジュールがない（Dependenciesが0）という点が気に入ったのでそちらを選択。)）。
+　ZIP形式の電子書籍ファイルについても、同じようにサムネイル画像を表示したい。アルゴリズム的にはZIPファイル内のファイルをスキャンして最初に見つかったjpegファイルを取り出せばOKだろう。モジュールとしてはJSZip（[https://www.npmjs.com/package/jszip](https://www.npmjs.com/package/jszip)）とADM-ZIP（[https://www.npmjs.com/package/adm-zip](https://www.npmjs.com/package/adm-zip)）というものが見つかった。利用者数はどちらも十分に多く、どっちを選択しても問題なさそうだが、ADM-ZIPはほかに依存するモジュールがない（Dependenciesが0）という点が気に入ったのでそちらを選択。
+
+　サムネイル取得関連のメソッドを整理し、ZIP用とPDF用に分割。すんなりとZIPファイル内から最初の画像ファイルを取得するコードを実装できた（[コード全文](https://github.com/hylom/ebmgr/blob/8b13a855070acd100bcd8475de6b14a0e7939314/ebmgr.js)）。
 
 ```
 function getZipThumbnail(vpath) {

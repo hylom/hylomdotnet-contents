@@ -9,11 +9,11 @@ publishDate: 2020-05-06T17:13:39+09:00
 
 　サムネイル画像表示ができたので、本日はこのアプリをアプリフレームワーク[Electron](https://www.electronjs.org)を使ってスタンドアロンで動作するアプリケーション化してみます。
 
- - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
- - Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化
- - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+・[GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
+・[Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
+・[Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
+・Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化
+・[Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
 # WebアプリをElectronアプリ化する際の要件
 
@@ -23,10 +23,12 @@ publishDate: 2020-05-06T17:13:39+09:00
 
 　ただ、Electron内で表示される画面はあくまでHTMLベースのものなので、画像を表示させたい場合はURLでそのコンテンツの場所を指定する必要がある。今回のサムネイル画像のような動的に生成した画像を表示させたい場合、選択肢としてはelectronのプロセス内でWebサーバーを立ち上げてそこにHTTPでリクエストを投げて画像を取得するか、どこかにファイルとして保存してそのパスをURLとして指定する、もしくは[data:スキーマのURL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)を使うという3通りがある。今回は別途Webサーバーを立ち上げたくはないので、data:スキーマを利用することにする。
 
-　また、Electron内で実行するコードからはNode.jsの任意のモジュールが利用できるため、電子書籍ファイル一覧の取得やサムネイルの取得はこれらの処理を実装したebmgr.jsを直接importして利用すれば良いだろうと思っていたのだが、今回使用したcreate-react-appベースの開発環境ではfsなどのモジュールが利用できないように細工がされている模様（[# データアクセスのためのクラス実装
+　また、Electron内で実行するコードからはNode.jsの任意のモジュールが利用できるため、電子書籍ファイル一覧の取得やサムネイルの取得はこれらの処理を実装したebmgr.jsを直接importして利用すれば良いだろうと思っていたのだが、今回使用したcreate-react-appベースの開発環境ではfsなどのモジュールが利用できないように細工がされている模様（[https://github.com/facebook/create-react-app/issues/3074](https://github.com/facebook/create-react-app/issues/3074)）。しょうがないので、これらの処理はElectronのメインプロセスで実行することにする。
+
+# データアクセスのためのクラス実装
 
 
-　Electronではアプリ全体を管理するプロセスと画面表示に関連するプロセスが分離されており、前者をメインプロセス、後者をレンダープロセスと呼ぶ。レンダープロセスとメインプロセスはIPCで簡単に通信ができるので、IPC経由でebmgr.jsに実装されている関数を呼び出せるプロクシクラス（[https://github.com/hylom/ebmgr/blob/9aa49967ff2ed933009b454ee035e32b68c0609f/react-app/src/ipc-client.js ipc-client.js](https://github.com/hylom/ebmgr/blob/9aa49967ff2ed933009b454ee035e32b68c0609f/react-app/src/ipc-client.js ipc-client.js)(https://github.com/facebook/create-react-app/issues/3074]）。しょうがないので、これらの処理はElectronのメインプロセスで実行することにする。)）を実装し、クライアントからはこのプロクシクラス経由で各種関数を呼び出す設計とした。
+　Electronではアプリ全体を管理するプロセスと画面表示に関連するプロセスが分離されており、前者をメインプロセス、後者をレンダープロセスと呼ぶ。レンダープロセスとメインプロセスはIPCで簡単に通信ができるので、IPC経由でebmgr.jsに実装されている関数を呼び出せるプロクシクラス（[ipc-client.js](https://github.com/hylom/ebmgr/blob/9aa49967ff2ed933009b454ee035e32b68c0609f/react-app/src/ipc-client.js)）を実装し、クライアントからはこのプロクシクラス経由で各種関数を呼び出す設計とした。
 
 　なお、IPCを利用するにはelectronモジュールを読み込む必要があるのだが、非Electron環境ではその動作は失敗する。そのため、次のように条件分岐を入れた上でモジュールを読み込ませる必要がある。
 
@@ -135,7 +137,9 @@ export default function getClient() {
 
 　これで、getClient()経由でクライアントオブジェクトを取得し、それに対しgetBooks()やgetBookThumbnail()を呼び出すことで、Electron/Webブラウザどちらの環境でも同じコードで処理を記述できるようになる。
 
-　electronのメインプロセスのコード（[main.js](htt＊ps://github.com/hylom/ebmgr/blob/2377dd201cc864dbaa53f38a7c53437d8cacca01/electron/main.js)）はドキュメントのサンプルコード（[```
+　electronのメインプロセスのコード（[main.js](htt＊ps://github.com/hylom/ebmgr/blob/2377dd201cc864dbaa53f38a7c53437d8cacca01/electron/main.js)）はドキュメントのサンプルコード（[https://www.electronjs.org/docs/tutorial/first-app#electron-development-in-a-nutshell](https://www.electronjs.org/docs/tutorial/first-app#electron-development-in-a-nutshell)）ほぼそのままだが、IPC関連のコードを追加しているのと、loadFileの部分を次のように変更している。
+
+```
 win.loadURL('http://localhost:3333/');
 ```
 
@@ -145,7 +149,7 @@ win.loadURL('http://localhost:3333/');
 
 
 
-　まずReactアプリのコンポーネントとして、画像を表示する[https://github.com/hylom/ebmgr/blob/2377dd201cc864dbaa53f38a7c53437d8cacca01/react-app/src/Thumbnail.js Thumbnail](https://github.com/hylom/ebmgr/blob/2377dd201cc864dbaa53f38a7c53437d8cacca01/react-app/src/Thumbnail.js Thumbnail)(https://www.electronjs.org/docs/tutorial/first-app#electron-development-in-a-nutshell]）ほぼそのままだが、IPC関連のコードを追加しているのと、loadFileの部分を次のように変更している。)コンポーネントを作成する。Reactのコンポーネントはその属性として任意のオブジェクトを受け取れるようになっており、渡されたオブジェクトはconstructor()の引数として渡される。これを引数にsuper()を実行することで、this.propというプロパティでその値にアクセスできるようになる。
+　まずReactアプリのコンポーネントとして、画像を表示する[Thumbnail](https://github.com/hylom/ebmgr/blob/2377dd201cc864dbaa53f38a7c53437d8cacca01/react-app/src/Thumbnail.js)コンポーネントを作成する。Reactのコンポーネントはその属性として任意のオブジェクトを受け取れるようになっており、渡されたオブジェクトはconstructor()の引数として渡される。これを引数にsuper()を実行することで、this.propというプロパティでその値にアクセスできるようになる。
 
 ```
 class Thumbnail extends Component {
@@ -297,7 +301,9 @@ async function getPdfThumbnail(vpath, page) {
   win.loadFile('./public/index.html');
 ```
 
-　すると、動かない。これは、create-react-appで作成した環境でビルドして出力されたindex.htmlファイルではJSやCSS、画像などの各種リソースがすべて「/」から始まる絶対パスで書かれているため。ググったところ、これはReactアプリのpackage.jsonに「"homepage": "."」を追加することで解決できるとあったので（[　これでWebサーバーレスでアプリを実行できるようになったので、これらをアプリとしてパッケージングしてみる。基本的にはドキュメント（[https://www.electronjs.org/docs/tutorial/application-distribution](https://www.electronjs.org/docs/tutorial/application-distribution)(https://github.com/facebook/create-react-app/blob/1d03579f518d2d5dfd3e5678184dd4a7d8544774/docusaurus/docs/deployment.md]）、これを試したところ無事解決。)）で書かれている通りの作業をすることになる。
+　すると、動かない。これは、create-react-appで作成した環境でビルドして出力されたindex.htmlファイルではJSやCSS、画像などの各種リソースがすべて「/」から始まる絶対パスで書かれているため。ググったところ、これはReactアプリのpackage.jsonに「"homepage": "."」を追加することで解決できるとあったので（[https://github.com/facebook/create-react-app/blob/1d03579f518d2d5dfd3e5678184dd4a7d8544774/docusaurus/docs/deployment.md](https://github.com/facebook/create-react-app/blob/1d03579f518d2d5dfd3e5678184dd4a7d8544774/docusaurus/docs/deployment.md)）、これを試したところ無事解決。
+
+　これでWebサーバーレスでアプリを実行できるようになったので、これらをアプリとしてパッケージングしてみる。基本的にはドキュメント（[https://www.electronjs.org/docs/tutorial/application-distribution](https://www.electronjs.org/docs/tutorial/application-distribution)）で書かれている通りの作業をすることになる。
 
 　これは定期的に実行することになるので、Makefileを書く。
 

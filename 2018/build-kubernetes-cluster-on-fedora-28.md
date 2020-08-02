@@ -31,10 +31,13 @@ contexts:
 current-context: kubelet-context
 ```
 
-　--api_servers（--api-servers）オプションは廃止されているので、このように設定ファイルでapi-serverのURLを指定しなければならない模様（[## （追記@2018-05-15）
+　--api_servers（--api-servers）オプションは廃止されているので、このように設定ファイルでapi-serverのURLを指定しなければならない模様（[https://github.com/kubernetes/website/issues/7417](https://github.com/kubernetes/website/issues/7417)）。
 
 
-　kube-proxyにはiptables 1.6.2と組み合わせて使うとiptablesルールを適切に設定できないという[https://github.com/NixOS/nixpkgs/issues/35544 不具合](https://github.com/NixOS/nixpkgs/issues/35544 不具合)(https://github.com/kubernetes/website/issues/7417]）。)がある。Fedora 28のiptablesは1.6.2なので、これに引っかかる。Fedora 28のKubernetesパッケージに含まれているkubeletでは現時点でこれが修正されていない。とりあえずFedora 27用のiptables 1.6.1に置き換えることで問題は回避できそう。
+## （追記@2018-05-15）
+
+
+　kube-proxyにはiptables 1.6.2と組み合わせて使うとiptablesルールを適切に設定できないという[不具合](https://github.com/NixOS/nixpkgs/issues/35544)がある。Fedora 28のiptablesは1.6.2なので、これに引っかかる。Fedora 28のKubernetesパッケージに含まれているkubeletでは現時点でこれが修正されていない。とりあえずFedora 27用のiptables 1.6.1に置き換えることで問題は回避できそう。
 
 ```
 $ wget https://dl.fedoraproject.org/pub/fedora/linux/releases/27/Everything/x86_64/os/Packages/i/iptables-1.6.1-4.fc27.x86_64.rpm

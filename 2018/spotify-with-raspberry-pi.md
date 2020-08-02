@@ -1,7 +1,7 @@
 ---
 slug: spotify-with-raspberry-pi
 title: Raspberry Piを使ってSpotifyをheadlessで聞く
-tags: [ spotify, respberry-pi, linux ]
+tags: [ spotify, raspberry-pi, linux ]
 date: 2018-03-21T17:23:26+09:00
 lastmod: 2018-03-21T17:31:49+09:00
 publishDate: 2018-03-21T17:23:26+09:00

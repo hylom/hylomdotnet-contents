@@ -9,11 +9,11 @@ publishDate: 2020-05-06T15:00:44+09:00
 
 　世間は5連休ですが、特に出かけることもできず、日曜大工や電子工作の材料も入手ができずと普段休日にやっていることをほぼ封じられている毎日です。しょうがないので、前から触ってみたかったReactを使って、前から欲しいと思っていた電子書籍管理アプリを作ってみたレポートです。
 
- - GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
- - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
- - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+・GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）
+・[Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
+・[Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
+・[Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
+・[Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
 
 　仕事ではないので、特に事前調査などをせずに行き当たりばったりでコードを書いていきます。また、このレポート記事も（仕事ではないので）Twitter並みに雑にやった作業を書いていきます（ちなみに、記事を書いているのはリアルタイムではありません。メモ書きはリアルタイムでやっていますが、整理・校正は5日目にまとめてやっています）。
@@ -31,7 +31,7 @@ publishDate: 2020-05-06T15:00:44+09:00
 
 
 
-　まずはReactのチュートリアル（[Option 2: Local Development Environment」を参照して「npx create-react-app ＜アプリ名＞」コマンドで開発環境を作る。Reactの特徴は、表示するコンポーネントをクラスとして定義して、そこにHTMLのテンプレートを直接書き込む点にあるようだ。今回は「ebmgr」という名前でアプリを作る。
+　まずはReactのチュートリアル（[https://reactjs.org/tutorial/tutorial.html](https://reactjs.org/tutorial/tutorial.html)）をざっと眺めるとともに、このチュートリアル内の「Setup Option 2: Local Development Environment」を参照して「npx create-react-app ＜アプリ名＞」コマンドで開発環境を作る。Reactの特徴は、表示するコンポーネントをクラスとして定義して、そこにHTMLのテンプレートを直接書き込む点にあるようだ。今回は「ebmgr」という名前でアプリを作る。
 
 ```
 $ npx create-react-app ebmgr
@@ -86,7 +86,7 @@ function App() {
 export default App;
 ```
 
-　ちなみにこのようにJavaScript中に直接HTMLが書き込まれているフォーマットを[https://reactjs.org/docs/introducing-jsx.html JSX](https://reactjs.org/docs/introducing-jsx.html JSX)(https://reactjs.org/tutorial/tutorial.html]）をざっと眺めるとともに、このチュートリアル内の「Setup)と呼ぶらしい。
+　ちなみにこのようにJavaScript中に直接HTMLが書き込まれているフォーマットを[JSX](https://reactjs.org/docs/introducing-jsx.html)と呼ぶらしい。
 
 　JSXファイル内ではSVGファイルやCSSファイルをimport文でインポートできるようだ。また、テンプレート内での変数展開は「{」「}」で行える模様。一般的なテンプレートエンジンはforやwhileのようなループ機構を持っているが、JSXはそういった機構は持っていないようなので、たとえばArrayで格納されているテキストを順に表示したいといった場合、単純にJavaScriptコードで次のように展開してやれば良い。
 
@@ -159,7 +159,7 @@ ReactDOM.render(
 
 　ReactではNode.jsのモジュールをインポートできるようだが、さすがにfsなどのモジュールは使えないようだ。そのため、ローカルファイルシステム上にあるファイルの情報などを表示するにはREST APIなどを使ってサーバーと別途非同期通信を行う必要がある。create-react-appで作成した環境では「npm start」コマンドを実行すると開発用サーバーが立ち上がるが、この開発用サーバーはReactアプリを提供する機能しかないため、別途APIを提供するWebサーバーを用意する必要がある。
 
-　最近ではREST APIといえばOpenAPI（[Specification（[https://swagger.io/specification/](https://swagger.io/specification/)(https://www.openapis.org]）ですよね、ということでOpenAPI)）を見ながら電子書籍データのリソースを定義した最低限のサービス仕様ファイルを作成する。ここでは「/books」にGETリクエストを投げることで、タイトルとファイルパスを含む配列を返すというAPIを定義した。
+　最近ではREST APIといえばOpenAPI（[https://www.openapis.org](https://www.openapis.org)）ですよね、ということでOpenAPI Specification（[https://swagger.io/specification/](https://swagger.io/specification/)）を見ながら電子書籍データのリソースを定義した最低限のサービス仕様ファイルを作成する。ここでは「/books」にGETリクエストを投げることで、タイトルとファイルパスを含む配列を返すというAPIを定義した。
 
 ```
 openapi: 3.0.5
@@ -206,7 +206,7 @@ components:
 
 　なお、あとでツールを使ってここからサーバーコードを生成するのだが、ここで定義している「operationId」という要素がメソッド名にマッピングされる。省略すると勝手にダサい名前をつけられる可能性があるので気をつけましょう。
 
-　Swagger Editor（[Server」や「Generate Client」メニューからサーバー/クライアントコードをダウンロードできるようになる。今回はNode.jsでサーバーも書くので「nodejs-server」を選択。するとzip圧縮されたサーバーコードがダウンロードされる。
+　Swagger Editor（[https://editor.swagger.io](https://editor.swagger.io)）に作成したサービス仕様ファイルをアップロードすると、ここで作成したスキーマを検証したり、「Generate Server」や「Generate Client」メニューからサーバー/クライアントコードをダウンロードできるようになる。今回はNode.jsでサーバーも書くので「nodejs-server」を選択。するとzip圧縮されたサーバーコードがダウンロードされる。
 
 　api-serverというディレクトリを作ってダウンロードしたzipファイルを展開して、そこで「npm start」コマンドを実行するとindex.jsファイルが実行されAPIサーバーが立ち上がる。なおこのサーバーはexpressを利用して実装されているようだ。標準では3000番ポートで待受をするが、これはReactの開発サーバーとバッティングするので3333番ポートに変更している。
 
@@ -234,7 +234,7 @@ http.createServer(app).listen(serverPort, function () {
 
 　サービス仕様に記述したパスに対応する処理はservice/DefaultServices.jsに書けば良いようだ。将来的にこのapi-server以下のコードは書き直すことがあるかもしれないので、実際のロジックはこのディレクトリ外のファイル（../../ebmgr.js）に記述する。
 
-　まず必要なのは指定したディレクトリ内にある電子書籍ファイルの情報を返すコードなので、getContents()というメソッドを実装する（[https://github.com/hylom/ebmgr/blob/e71174461efe123f616a7ae3965d5be1a7c70813/ebmgr.js コード全文はこちら](https://github.com/hylom/ebmgr/blob/e71174461efe123f616a7ae3965d5be1a7c70813/ebmgr.js コード全文はこちら)(https://editor.swagger.io]）に作成したサービス仕様ファイルをアップロードすると、ここで作成したスキーマを検証したり、「Generate)）。
+　まず必要なのは指定したディレクトリ内にある電子書籍ファイルの情報を返すコードなので、getContents()というメソッドを実装する（[コード全文はこちら](https://github.com/hylom/ebmgr/blob/e71174461efe123f616a7ae3965d5be1a7c70813/ebmgr.js)）。
 
 ```
 function getContents() {
