@@ -1,7 +1,7 @@
 ---
 slug: systemd-service-control-basics
 title: systemdでのサービス制御・超基本編
-tags: [ systemd,linux ]
+tags: [ systemd, linux ]
 date: 2014-12-19T16:55:35+09:00
 lastmod: 2014-12-19T16:56:05+09:00
 publishDate: 2014-12-19T16:55:35+09:00

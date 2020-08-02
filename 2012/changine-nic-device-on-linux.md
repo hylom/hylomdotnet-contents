@@ -1,7 +1,7 @@
 ---
 slug: changine-nic-device-on-linux
 title: NICのデバイス名を変更する
-tags: [ linux,configuration,tips ]
+tags: [ linux, configuration, tips ]
 date: 2012-09-10T19:38:15+09:00
 lastmod: 2012-09-10T19:38:15+09:00
 publishDate: 2012-09-10T19:38:15+09:00

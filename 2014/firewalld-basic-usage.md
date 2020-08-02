@@ -1,7 +1,7 @@
 ---
 slug: firewalld-basic-usage
 title: firewalldでのファイアウォール制御・超基本編
-tags: [ linux,firewalld,システム管理 ]
+tags: [ linux, firewalld, システム管理 ]
 date: 2014-12-19T17:15:32+09:00
 lastmod: 2015-06-14T17:33:39+09:00
 publishDate: 2014-12-19T17:15:32+09:00

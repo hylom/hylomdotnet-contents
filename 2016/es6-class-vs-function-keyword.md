@@ -1,7 +1,7 @@
 ---
 slug: es6-class-vs-function-keyword
 title: ECMAScript 2015（ES6）でのクラス定義におけるclassキーワードとfunctionキーワードの違い
-tags: [ ecmascript,javascript ]
+tags: [ ecmascript, javascript ]
 date: 2016-06-07T00:58:08+09:00
 lastmod: 2016-06-07T01:01:53+09:00
 publishDate: 2016-06-07T00:58:08+09:00

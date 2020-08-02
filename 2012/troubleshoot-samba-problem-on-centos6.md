@@ -1,7 +1,7 @@
 ---
 slug: troubleshoot-samba-problem-on-centos6
 title: CentOS 6のSambaでファイル共有時に問題が発生したら
-tags: [ linux,centos,samba ]
+tags: [ linux, centos, samba ]
 date: 2012-09-12T16:05:34+09:00
 lastmod: 2012-09-12T16:05:34+09:00
 publishDate: 2012-09-12T16:05:34+09:00

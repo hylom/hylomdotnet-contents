@@ -1,7 +1,7 @@
 ---
 slug: show-image-dynamically-by-react
 title: Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示
-tags: [ react javascript node.js programming ]
+tags: [ react, javascript, node.js, programming ]
 date: 2020-05-06T16:14:38+09:00
 lastmod: 2020-05-06T19:16:45+09:00
 publishDate: 2020-05-06T16:14:38+09:00

@@ -1,7 +1,7 @@
 ---
 slug: build-ghostscript-on-macos
 title: macOSでGhostscriptをビルドする
-tags: [ macos oss ]
+tags: [ macos, oss ]
 date: 2020-05-03T22:52:54+09:00
 lastmod: 2020-05-03T22:54:32+09:00
 publishDate: 2020-05-03T22:52:54+09:00

@@ -1,7 +1,7 @@
 ---
 slug: convert-react-app-to-electron-app
 title: Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化
-tags: [ electron react javascript programming ]
+tags: [ electron, react, javascript, programming ]
 date: 2020-05-06T17:13:39+09:00
 lastmod: 2020-05-06T19:15:42+09:00
 publishDate: 2020-05-06T17:13:39+09:00

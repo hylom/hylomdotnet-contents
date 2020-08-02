@@ -1,7 +1,7 @@
 ---
 slug: firewalld-change-interface-permanent-can-not-affect-on-centos-7
 title: CentOS 7で「firewalld --permanent --change-interface」コマンドが動作しない問題の解決法
-tags: [ centos7,firewalld ]
+tags: [ centos7, firewalld ]
 date: 2016-07-12T19:57:27+09:00
 lastmod: 2016-07-12T20:01:48+09:00
 publishDate: 2016-07-12T19:57:27+09:00

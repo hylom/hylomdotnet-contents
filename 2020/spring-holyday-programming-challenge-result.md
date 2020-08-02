@@ -1,7 +1,7 @@
 ---
 slug: spring-holyday-programming-challenge-result
 title: GW引き篭もりチャレンジ：React＋Electronでアプリを作ってみた総括
-tags: [ programming react electron javascript ]
+tags: [ programming, react, electron, javascript ]
 date: 2020-05-06T19:15:09+09:00
 lastmod: 2020-05-06T19:15:09+09:00
 publishDate: 2020-05-06T19:15:09+09:00

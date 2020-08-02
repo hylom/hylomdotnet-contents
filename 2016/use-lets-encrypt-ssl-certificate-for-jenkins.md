@@ -1,7 +1,7 @@
 ---
 slug: use-lets-encrypt-ssl-certificate-for-jenkins
 title: JenkinsでLet's encryptのSSL証明書を使う
-tags: [ jenkins,ci ]
+tags: [ jenkins, ci ]
 date: 2016-07-05T22:00:58+09:00
 lastmod: 2016-07-05T23:24:11+09:00
 publishDate: 2016-07-05T22:00:58+09:00

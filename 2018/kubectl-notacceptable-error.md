@@ -1,7 +1,7 @@
 ---
 slug: kubectl-notacceptable-error
 title: kubectlコマンドで「NotAcceptable」というエラーが出たときの話
-tags: [ kubernetes, k8s, linux ]
+tags: [ kubernets, k8s, linux ]
 date: 2018-07-04T18:20:48+09:00
 lastmod: 2018-07-04T18:21:00+09:00
 publishDate: 2018-07-04T18:20:48+09:00

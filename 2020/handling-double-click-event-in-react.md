@@ -1,7 +1,7 @@
 ---
 slug: handling-double-click-event-in-react
 title: Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く
-tags: [ react node.js javascript programming ]
+tags: [ react, node.js, javascript, programming ]
 date: 2020-05-06T18:54:27+09:00
 lastmod: 2020-05-06T19:16:25+09:00
 publishDate: 2020-05-06T18:54:27+09:00

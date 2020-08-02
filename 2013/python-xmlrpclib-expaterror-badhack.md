@@ -1,7 +1,7 @@
 ---
 slug: python-xmlrpclib-expaterror-badhack
 title: Python 2.6/2.7のxmlrpclibでxml.parsers.expat.ExpatErrorが出た場合の対処
-tags: [ python,programming ]
+tags: [ python, programming ]
 date: 2013-06-26T22:40:25+09:00
 lastmod: 2013-06-26T22:40:55+09:00
 publishDate: 2013-06-26T22:40:25+09:00

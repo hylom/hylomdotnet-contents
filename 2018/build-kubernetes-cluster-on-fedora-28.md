@@ -1,7 +1,7 @@
 ---
 slug: build-kubernetes-cluster-on-fedora-28
 title: Fedora28で自前Kubernetesクラスタを作るメモ
-tags: [ fedora,linux,k8s,kubernetes ]
+tags: [ fedora, linux, k8s, kubernetes ]
 date: 2018-05-11T19:48:58+09:00
 lastmod: 2018-05-15T19:10:46+09:00
 publishDate: 2018-05-11T19:48:58+09:00

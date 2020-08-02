@@ -1,7 +1,7 @@
 ---
 slug: generate-thumbnail-image-from-pdf-with-nodejs
 title: Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成
-tags: [ node.js programming javascript ]
+tags: [ node.js, programming, javascript ]
 date: 2020-05-06T15:27:58+09:00
 lastmod: 2020-05-06T19:17:00+09:00
 publishDate: 2020-05-06T15:27:58+09:00
