@@ -15,7 +15,7 @@ publishDate: 2020-05-06T17:13:39+09:00
  - Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化
  - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
-# WebアプリをElectronアプリ化する際の要件
+### WebアプリをElectronアプリ化する際の要件
 
 
 
@@ -25,7 +25,7 @@ publishDate: 2020-05-06T17:13:39+09:00
 
 　また、Electron内で実行するコードからはNode.jsの任意のモジュールが利用できるため、電子書籍ファイル一覧の取得やサムネイルの取得はこれらの処理を実装したebmgr.jsを直接importして利用すれば良いだろうと思っていたのだが、今回使用したcreate-react-appベースの開発環境ではfsなどのモジュールが利用できないように細工がされている模様（[https://github.com/facebook/create-react-app/issues/3074](https://github.com/facebook/create-react-app/issues/3074)）。しょうがないので、これらの処理はElectronのメインプロセスで実行することにする。
 
-# データアクセスのためのクラス実装
+### データアクセスのためのクラス実装
 
 
 　Electronではアプリ全体を管理するプロセスと画面表示に関連するプロセスが分離されており、前者をメインプロセス、後者をレンダープロセスと呼ぶ。レンダープロセスとメインプロセスはIPCで簡単に通信ができるので、IPC経由でebmgr.jsに実装されている関数を呼び出せるプロクシクラス（[ipc-client.js](https://github.com/hylom/ebmgr/blob/9aa49967ff2ed933009b454ee035e32b68c0609f/react-app/src/ipc-client.js)）を実装し、クライアントからはこのプロクシクラス経由で各種関数を呼び出す設計とした。
@@ -145,7 +145,7 @@ win.loadURL('http://localhost:3333/');
 
 　こうすることで、index.htmlファイルをReactのテストサーバーから直接取得できるようになり、開発効率が上がる。
 
-# 画像をdata:URL経由で表示させる
+### 画像をdata:URL経由で表示させる
 
 
 
@@ -216,7 +216,7 @@ render() {
 }
 ```
 
-# Electronアプリの起動
+### Electronアプリの起動
 
 
 
@@ -291,7 +291,7 @@ async function getPdfThumbnail(vpath, page) {
 
 　さて、相変わらず処理は重いものの、これでアプリがサムネイルのロード環境まで固まる現象は解決。ただ、すべての画像が一斉に表示されるという別の問題に気付く。とはいえ現時点ではクリティカルな問題ではないのでToDOに入れて一旦放置。
 
-# スタンドアロンなElectronアプリ化
+### スタンドアロンなElectronアプリ化
 
 
 

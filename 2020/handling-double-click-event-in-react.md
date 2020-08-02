@@ -16,7 +16,7 @@ publishDate: 2020-05-06T18:54:27+09:00
  - Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く
 
 
-# Node.jsプログラムからファイルを指定したアプリで開く
+### Node.jsプログラムからファイルを指定したアプリで開く
 
 
 
@@ -99,7 +99,7 @@ function getViewer(vpath) {
   }
 ```
 
-# Reactでのダブルクリックの扱い
+### Reactでのダブルクリックの扱い
 
 
 　Webアプリで要素のダブルクリックに対しアクションを取るにはdblclickイベントを使うのだが、ReactではonDoubleClickという属性を定義することでイベントハンドラを定義する。このイベントは[Thumbnail](https://github.com/hylom/ebmgr/blob/e18521fe7225652e502473100221c62a1759ebf3/react-app/src/Thumbnail.js)オブジェクトで発生させたいので、このクラス内にイベントハンドラを記述する。
@@ -137,7 +137,7 @@ function getViewer(vpath) {
 
 　これでサムネイルのダブルクリックに反応してその電子書籍ファイルがconfig.json内で指定したアプリケーションで開かれるようになる。また、非Electron環境ではアプリケーションは開かず、コンソールにエラーメッセージが表示される。
 
-# 環境に応じてElectronアプリのロード元を変更する
+### 環境に応じてElectronアプリのロード元を変更する
 
 
 

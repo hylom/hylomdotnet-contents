@@ -13,7 +13,7 @@ publishDate: 2020-05-03T22:52:54+09:00
 
 　Ghostscriptのソースコードは、公式サイトの[ダウンロードページ](https://www.ghostscript.com/download/gsdnld.html)から入手できます。ダウンロード後、適当なディレクトリに展開しておきます。
 
-## 必要な依存ライブラリ
+#### 必要な依存ライブラリ
 
 
 

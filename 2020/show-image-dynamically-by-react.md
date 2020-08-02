@@ -15,7 +15,7 @@ publishDate: 2020-05-06T16:14:38+09:00
  - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
  - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
-# PDFからのサムネイル画像の作成と読み込み
+### PDFからのサムネイル画像の作成と読み込み
 
 
 
@@ -76,7 +76,7 @@ function getPdfThumbnail(vpath, page) {
 }
 ```
 
-# OpenAPIのサービス仕様定義の修正とAPIサーバーの修正
+### OpenAPIのサービス仕様定義の修正とAPIサーバーの修正
 
 
 
@@ -155,7 +155,7 @@ module.exports.getBookThumbnail = function getBookThumbnail (req, res, next, vpa
 
 　これでAPIサーバーを起動して/docs以下にアクセスしてSwaggerでテストする。問題なく動作したので続いてクライアント側のコードを記述する。
 
-# Reactアプリのコード更新
+### Reactアプリのコード更新
 
 
 
@@ -201,7 +201,7 @@ GET /api/v1/books/0f276cdfc8a2c99c988ef7b88141f377%2FOP%E3%82%A2%E3%83%B3%E3%83%
 
 　ここから、サムネイル生成処理には1つあたりおおむね数百ミリ秒ほどかかっていることが分かる。さすがにちょっとUI的に重いが、とりあえずここの部分の最適化はToDoに突っ込んで置いてまたの機会に。ghostscriptのエラーメッセージについては、画像自体はちゃんと表示されているので現時点では無視。
 
-# ZIP形式の電子書籍ファイルからのサムネイル画像取得
+### ZIP形式の電子書籍ファイルからのサムネイル画像取得
 
 
 
@@ -250,7 +250,7 @@ function getThumbnail(vpath, page) {
 
 　これでZIP圧縮形式の電子書籍ファイルのサムネイルもとりあえず表示できるようになった。
 
-# 開発サーバーを使わないアプリ実行（Reactアプリのデプロイ）
+### 開発サーバーを使わないアプリ実行（Reactアプリのデプロイ）
 
 
 　まずはサムネイル画像表示までを実現できたので、ここでReactの開発サーバー外でクライアントを動作できることを確認する。Reactアプリのディレクトリで「npm run build」コマンドを実行すると、アセットがビルドされてリリース用のコードが作成され、buildディレクトリ内にそれら一式が出力される。このディレクトリ内のファイルをWebサーバーで公開することで、開発用サーバーを使わずにアプリを実行できる。
