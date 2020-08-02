@@ -9,11 +9,11 @@ publishDate: 2020-05-06T15:27:58+09:00
 
 　前から触ってみたかったReactを使って、前から欲しいと思っていた電子書籍管理アプリを作ってみたレポート2日目です。今日はサムネイル画像生成の話でReactは全然関係ありません。
 
-・[GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
-・Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成
-・[Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
-・[Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
-・[Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+ - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
+ - Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成
+ - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
+ - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
+ - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
 
 
 　電子書籍ファイルのサムネイルを表示させるために、表紙（つまり電子書籍の1ページ目）の画像の生成が必要となる。PDFファイルの場合、なんらかのツールを使って変換処理が必要となる。

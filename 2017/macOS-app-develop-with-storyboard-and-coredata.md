@@ -12,10 +12,10 @@ publishDate: 2017-04-09T22:55:35+09:00
 ## 参考文献
 
 
-・[Developers.IOの記事](http://dev.classmethod.jp/smartphone/iphone/remind-storyboard/)：Storyboardを使った開発の概要
-・[Core Dataに関するAppleの公式ドキュメント（日本語）](https://developer.apple.com/jp/documentation/Cocoa/Conceptual/CoreData/index.html)：Core Dataの概要。ただし理解しにくい
-・[上記ドキュメントの英語版](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/index.html)：Swift 3対応などのアップデート済み
-・[Core Data の使い方（１）](http://www.nashuaworks.com/KTDContens/201507101234.html)：Core DataのデータをViewに表示する作業手順解説
+ - [Developers.IOの記事](http://dev.classmethod.jp/smartphone/iphone/remind-storyboard/)：Storyboardを使った開発の概要
+ - [Core Dataに関するAppleの公式ドキュメント（日本語）](https://developer.apple.com/jp/documentation/Cocoa/Conceptual/CoreData/index.html)：Core Dataの概要。ただし理解しにくい
+ - [上記ドキュメントの英語版](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/index.html)：Swift 3対応などのアップデート済み
+ - [Core Data の使い方（１）](http://www.nashuaworks.com/KTDContens/201507101234.html)：Core DataのデータをViewに表示する作業手順解説
 
 ## 作業と疑問点
 
@@ -49,8 +49,8 @@ windowController.contentViewController!.representedObject = windowController.doc
 
 
 
-・「Use Core Data」を選択してプロジェクトのテンプレートを作った場合、独自に初期化コードを書く必要は無い
-・DocumentからView Controllerにアクセスするのは面倒臭い
+ - 「Use Core Data」を選択してプロジェクトのテンプレートを作った場合、独自に初期化コードを書く必要は無い
+ - DocumentからView Controllerにアクセスするのは面倒臭い
 
 　なおこの辺の作業を行ったコードは[https://github.com/hylom/ttune/tree/76d43fe476c24f064aee51b7748529aa82a309d1](https://github.com/hylom/ttune/tree/76d43fe476c24f064aee51b7748529aa82a309d1)です。
 

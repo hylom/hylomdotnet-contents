@@ -24,11 +24,11 @@ publishDate: 2016-04-05T00:40:37+09:00
 
 　ECMAScriptの標準ビルトインオブジェクトについて。
 
-・標準ビルトインオブジェクトの多くは関数オブジェクト
-・関数オブジェクトのうち、一部はnew演算子付きで実行することが想定されているコンストラクタ
-・ビルトイン関数には必要な引数よりも少ない引数を与えることができる。その場合、足りない引数にはundefinedが渡される
-・必要な引数よりも多い引数を与えることもできる。通常それは関数の実行時に評価はされるが、その後は無視される。ただし、このとき実装側でTypeError例外を投げることも許可されている
-・ビルトイン関数オブジェクトはlengthプロパティを持つ。このプロパティには、その関数に与える最大の名前付き引数の数が格納されている
+ - 標準ビルトインオブジェクトの多くは関数オブジェクト
+ - 関数オブジェクトのうち、一部はnew演算子付きで実行することが想定されているコンストラクタ
+ - ビルトイン関数には必要な引数よりも少ない引数を与えることができる。その場合、足りない引数にはundefinedが渡される
+ - 必要な引数よりも多い引数を与えることもできる。通常それは関数の実行時に評価はされるが、その後は無視される。ただし、このとき実装側でTypeError例外を投げることも許可されている
+ - ビルトイン関数オブジェクトはlengthプロパティを持つ。このプロパティには、その関数に与える最大の名前付き引数の数が格納されている
 
 ## 第18章
 
@@ -37,63 +37,63 @@ publishDate: 2016-04-05T00:40:37+09:00
 
 　ECMAScript 2015で定義されているグローバルオブジェクトは次の通り。まず値を示すオブジェクトが3つ。
 
-・Infinity
-・NaN
-・undefined
+ - Infinity
+ - NaN
+ - undefined
 
 　いくつかの関数オブジェクト。
 
-・eval(x)
-・isFinite(number)
-・isNaN(number)
-・parseFloat(string)
-・parseInt(string, radix)
-・decodeURI(encodedURI)
-・decodeURIComponent(encodedURIComponent)
-・encodeURI(uri)
-・encodeURIComponent(uriComponent)
+ - eval(x)
+ - isFinite(number)
+ - isNaN(number)
+ - parseFloat(string)
+ - parseInt(string, radix)
+ - decodeURI(encodedURI)
+ - decodeURIComponent(encodedURIComponent)
+ - encodeURI(uri)
+ - encodeURIComponent(uriComponent)
 
 　いくつかのグローバルオブジェクトのコンストラクタ。
 
-・Array()
-・ArrayBuffer()
-・Boolean()
-・DataView()
-・Date()
-・Error()
-・EvalError()
-・Float32Array()
-・Float64Array()
-・Function()
-・Int8Array
-・Int16Array
-・Int32Array
-・Map()
-・Number()
-・Object()
-・Proxy()
-・Promise()
-・RangeError()
-・ReferenceError()
-・RegExp()
-・Set()
-・String()
-・Symbol()
-・SyntaxError()
-・TypeRrror()
-・Uint8Array()
-・Uint8ClampedArray()
-・Uint16Array()
-・Uint32Array()
-・URIError()
-・WeakMap()
-・WeakSet()
+ - Array()
+ - ArrayBuffer()
+ - Boolean()
+ - DataView()
+ - Date()
+ - Error()
+ - EvalError()
+ - Float32Array()
+ - Float64Array()
+ - Function()
+ - Int8Array
+ - Int16Array
+ - Int32Array
+ - Map()
+ - Number()
+ - Object()
+ - Proxy()
+ - Promise()
+ - RangeError()
+ - ReferenceError()
+ - RegExp()
+ - Set()
+ - String()
+ - Symbol()
+ - SyntaxError()
+ - TypeRrror()
+ - Uint8Array()
+ - Uint8ClampedArray()
+ - Uint16Array()
+ - Uint32Array()
+ - URIError()
+ - WeakMap()
+ - WeakSet()
 
 　そのほかのグローバルオブジェクト。
 
-・JSON
-・Math
-・Reflect
+ - JSON
+ - Math
+ - Reflect
 
 　各オブジェクトについての詳細は後の章で説明されている。
 

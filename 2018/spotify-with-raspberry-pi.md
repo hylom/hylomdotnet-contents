@@ -85,10 +85,10 @@ VOLUME_ARGS="--enable-volume-normalisation --initial-volume 100"
 
 　次に、Spotify用のプラグインをインストールする。必要なのは下記。
 
-・[mopidy-mopify](https://github.com/dirkgroenen/mopidy-mopify)：MopidyにSpotify連携用のWeb UIを追加するプラグイン
-・[mopidy-spotify](https://github.com/mopidy/mopidy-spotify)：MopidyにSpotifyからのストリーミング再生機能を追加するプラグイン
-・libspotify：かつてSpotifyが公式に提供していたSpotify連携ライブラリ。すでに開発終了でいつサポートが終了してもおかしくない
-・pyspotify：libspotifyのPythonラッパー
+ - [mopidy-mopify](https://github.com/dirkgroenen/mopidy-mopify)：MopidyにSpotify連携用のWeb UIを追加するプラグイン
+ - [mopidy-spotify](https://github.com/mopidy/mopidy-spotify)：MopidyにSpotifyからのストリーミング再生機能を追加するプラグイン
+ - libspotify：かつてSpotifyが公式に提供していたSpotify連携ライブラリ。すでに開発終了でいつサポートが終了してもおかしくない
+ - pyspotify：libspotifyのPythonラッパー
 
 　libspotifyとコンパイル済みのpyspotifyはMopidyのaptリポジトリから入手可能（[ドキュメント](https://docs.mopidy.com/en/latest/installation/debian/)）。自分は次のように直接ダウンロードして使用した。
 

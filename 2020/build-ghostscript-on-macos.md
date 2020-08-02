@@ -19,11 +19,11 @@ publishDate: 2020-05-03T22:52:54+09:00
 
 ビルドには以下のライブラリが必要です。
 
-・libpng（[http://www.libpng.org/pub/png/libpng.html](http://www.libpng.org/pub/png/libpng.html)）
-・littleCMS（lcms、[http://www.littlecms.com/download.html](http://www.littlecms.com/download.html)）
-・jbig2dec（[https://jbig2dec.com](https://jbig2dec.com)）
-・libjpeg（[http://www.ijg.org](http://www.ijg.org)）
-・freetype（[https://www.freetype.org/download.html](https://www.freetype.org/download.html)）
+ - libpng（[http://www.libpng.org/pub/png/libpng.html](http://www.libpng.org/pub/png/libpng.html)）
+ - littleCMS（lcms、[http://www.littlecms.com/download.html](http://www.littlecms.com/download.html)）
+ - jbig2dec（[https://jbig2dec.com](https://jbig2dec.com)）
+ - libjpeg（[http://www.ijg.org](http://www.ijg.org)）
+ - freetype（[https://www.freetype.org/download.html](https://www.freetype.org/download.html)）
 
 　このうち、libpng、lcms、jbig2decはダウンロードしたアーカイブを展開して./configure;make;make installというおなじみの手段でビルド＆インストールが行えます（一部はfreetypeとlibjpegのようにソースツリー内に展開するだけで一緒にビルドできるようなのですが未確認）。
 
