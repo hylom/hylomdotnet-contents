@@ -25,11 +25,11 @@ def generate_index(p, dir_stack=[]):
 def generate_header(p, stack):
     content = ""
     if len(stack) == 1:
-        content = "{}年".format(stack[0])
+        content = "title: {}年".format(stack[0])
     elif len(stack) == 2:
-        content = "{}年{}月".format(*stack[:2])
+        content = "title: {}年{}月".format(*stack[:2])
     elif len(stack) == 3:
-        content = "{}年{}月{}日".format(*stack[:3])
+        content = "title: {}年{}月{}日".format(*stack[:3])
     if content:
         return "---\n{}\n---\n".format(content)
     return ""
