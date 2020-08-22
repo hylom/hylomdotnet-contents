@@ -6,7 +6,9 @@ import re
 def generate_index(p, dir_stack=[]):
     # generate _index.md
     index_md = p / '_index.md'
-    if not index_md.exists() and len(dir_stack) != 0:
+    if (not index_md.exists()
+        and len(dir_stack) != 0
+        and re.match(r'^\d+$', p.name)):
         with index_md.open(mode='w', encoding="utf8") as fp:
             fp.write(generate_header(index_md, dir_stack))
 
