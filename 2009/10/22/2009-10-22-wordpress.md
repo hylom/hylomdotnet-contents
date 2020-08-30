@@ -3,7 +3,7 @@ title: WordPress導入
 author: hylom
 type: post
 date: 2009-10-21T17:31:12+00:00
-url: /2009/10/22/wordpress導入/
+url: /2009/10/22/wordpress%e5%b0%8e%e5%85%a5/
 category:
   - Docs
 tag:

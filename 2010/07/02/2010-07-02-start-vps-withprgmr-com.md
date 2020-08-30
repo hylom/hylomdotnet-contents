@@ -3,7 +3,7 @@ title: 激安・低サポートのVPS「prgmr.com」を借りる
 author: hylom
 type: post
 date: 2010-07-02T07:49:58+00:00
-url: /2010/07/02/start-vps-withprgmr-com」を借りる/
+url: /2010/07/02/start-vps-withprgmr-com%e3%80%8d%e3%82%92%e5%80%9f%e3%82%8a%e3%82%8b/
 category:
   - Docs
 tag:

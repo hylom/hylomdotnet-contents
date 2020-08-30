@@ -3,7 +3,7 @@ title: Windows Azureメモその2：Azure Drive
 author: hylom
 type: post
 date: 2012-03-16T13:17:31+00:00
-url: /2012/03/16/windows-azureメモその2：azure-drive/
+url: windows-azure%E3%83%A1%E3%83%A2%E3%81%9D%E3%81%AE2%EF%BC%9Aazure-drive/
 category:
   - Hacks
 tag:
