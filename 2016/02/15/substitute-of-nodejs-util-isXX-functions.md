@@ -1,7 +1,7 @@
 ---
 slug: substitute-of-nodejs-util-isXX-functions
 title: Node.js 4.xで廃止となったutil.is系メソッドの代替案
-tags: [ javascript, nodejs ]
+tag: [ javascript, nodejs ]
 date: 2016-02-15T18:13:43+09:00
 lastmod: 2016-02-16T01:17:59+09:00
 publishDate: 2016-02-15T18:13:43+09:00

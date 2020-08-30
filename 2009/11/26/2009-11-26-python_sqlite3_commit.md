@@ -5,7 +5,7 @@ type: post
 date: 2009-11-25T17:55:20+00:00
 excerpt: '<p>　Pythonにはsqlite3という、SQLiteのインターフェイスモジュールがあるんだけど、Python 2.5の日本語ドキュメントのとおりやろうとすると微妙にハマる、という話。</p>'
 url: /2009/11/26/python_sqlite3_commit/
-categories:
+category:
   - Docs
 
 ---

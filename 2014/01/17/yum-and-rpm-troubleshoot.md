@@ -1,7 +1,7 @@
 ---
 slug: yum-and-rpm-troubleshoot
 title: 自作yumリポジトリでrpmパッケージに署名をしているのに「not signed」と表示されてインストールできない場合
-tags: [ rpm ]
+tag: [ rpm ]
 date: 2014-01-17T22:22:32+09:00
 lastmod: 2014-01-17T22:22:32+09:00
 publishDate: 2014-01-17T22:22:32+09:00

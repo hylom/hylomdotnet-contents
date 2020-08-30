@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2011-03-04T11:00:48+00:00
 url: /2011/03/04/apache-prefork-config/
-categories:
+category:
   - Docs
 tags:
   - apache

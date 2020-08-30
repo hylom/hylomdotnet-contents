@@ -1,7 +1,7 @@
 ---
 slug: express-connect-proxy-middleware
 title: Express環境で一部のURLに対するリクエストのみリバースプロクシを使って転送する
-tags: [ node.js, programming ]
+tag: [ node.js, programming ]
 date: 2013-03-21T01:39:53+09:00
 lastmod: 2013-03-21T01:40:38+09:00
 publishDate: 2013-03-21T01:39:53+09:00

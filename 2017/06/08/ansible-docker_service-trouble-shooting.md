@@ -1,7 +1,7 @@
 ---
 slug: ansible-docker_service-trouble-shooting
 title: Ansibleのdocker_serviceモジュールのトラブルシューティング
-tags: [ ansible ]
+tag: [ ansible ]
 date: 2017-06-08T18:12:04+09:00
 lastmod: 2017-06-08T21:21:28+09:00
 publishDate: 2017-06-08T18:12:04+09:00

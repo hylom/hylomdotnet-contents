@@ -1,7 +1,7 @@
 ---
 slug: partition-resize-with-fdisk
 title: fdiskでパーティションのリサイズを行う
-tags: [ linux, filesystem, tips ]
+tag: [ linux, filesystem, tips ]
 date: 2013-02-25T16:01:23+09:00
 lastmod: 2013-02-25T16:01:23+09:00
 publishDate: 2013-02-25T16:01:23+09:00

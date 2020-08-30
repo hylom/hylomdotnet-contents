@@ -1,7 +1,7 @@
 ---
 slug: kubernetes-service-troubleshoot
 title: Kubernetesのサービス周りのトラブルシュート
-tags: [ kubernetes, k8s, linux ]
+tag: [ kubernetes, k8s, linux ]
 date: 2018-07-04T19:13:50+09:00
 lastmod: 2018-07-04T19:13:50+09:00
 publishDate: 2018-07-04T19:13:50+09:00

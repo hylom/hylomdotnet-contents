@@ -5,7 +5,7 @@ type: post
 date: 2009-11-09T14:31:16+00:00
 excerpt: 　Wordpressの新バージョン（2.8.5）が出ていたので、アップデートしてみた。管理画面から「自動アップデート」なるものが実行できるらしいんだけど、謎のログイン（笑）が要求されたので、tarballからのアップデートを試みてみました。
 url: /2009/11/09/wordpress_updat/
-categories:
+category:
   - Docs
 tags:
   - wordpress

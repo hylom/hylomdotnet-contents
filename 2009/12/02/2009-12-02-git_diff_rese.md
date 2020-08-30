@@ -5,7 +5,7 @@ type: post
 date: 2009-12-02T06:33:52+00:00
 excerpt: 　最近久しぶりにgitを触って色々と忘れていたので再度メモ。
 url: /2009/12/02/git_diff_rese/
-categories:
+category:
   - Docs
 tags:
   - git

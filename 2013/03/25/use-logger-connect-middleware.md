@@ -1,7 +1,7 @@
 ---
 slug: use-logger-connect-middleware
 title: Connectミドルウェア「logger」でExpressアプリケーションのアクセスログ/エラーログを記録する 
-tags: [ express, connect, programming, node.js ]
+tag: [ express, connect, programming, node.js ]
 date: 2013-03-25T02:03:46+09:00
 lastmod: 2013-03-25T02:40:02+09:00
 publishDate: 2013-03-25T02:03:46+09:00

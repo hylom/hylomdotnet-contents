@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-07-24T09:25:48+00:00
 url: /2012/07/24/centos-initial-setup/
-categories:
+category:
   - 未分類
 tags:
   - centos

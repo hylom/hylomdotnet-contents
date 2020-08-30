@@ -1,7 +1,7 @@
 ---
 slug: japanese-freesoft-and-opensource
 title: 国産のWindowsフリーソフトにオープンソースのものは少ない気はするが実はそんなことはない
-tags: [ opensource, windows, opinion ]
+tag: [ opensource, windows, opinion ]
 date: 2012-09-03T21:06:14+09:00
 lastmod: 2012-09-03T21:06:14+09:00
 publishDate: 2012-09-03T21:06:14+09:00

@@ -1,7 +1,7 @@
 ---
 slug: use-ruby-1.9.3-in-centos-with-scl
 title: CentOSでRuby 1.9.3やPython 2.7、Python 3.3などを使う簡単な方法
-tags: [ centos, linux ]
+tag: [ centos, linux ]
 date: 2014-04-25T20:29:43+09:00
 lastmod: 2014-04-28T18:58:36+09:00
 publishDate: 2014-04-25T20:29:43+09:00

@@ -8,7 +8,7 @@ excerpt: |
   
   <p>　ただし、注意しなければ行けないのが、現状公開されているのは英語版のEnterprise Editionのみという点。といっても、インストール後に日本語言語ファイル（Multi User Interface、MUI）をWindows Update経由でインストールし、いくつかの設定を行えば日本語版とほぼ同じインターフェイスに変更できる。ということで、以下ではWindows 7 90-Day Eval VHDを日本語化する手順をメモ代わりに解説しておこう。
 url: /2010/01/19/windows-7-eval-vhd-japanese/
-categories:
+category:
   - Docs
 
 ---

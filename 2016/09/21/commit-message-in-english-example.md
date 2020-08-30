@@ -1,7 +1,7 @@
 ---
 slug: commit-message-in-english-example
 title: 英語によるコミットメッセージ文例その1
-tags: [ english, deveploer ]
+tag: [ english, deveploer ]
 date: 2016-09-21T01:20:38+09:00
 lastmod: 2016-09-22T01:04:43+09:00
 publishDate: 2016-09-21T01:20:38+09:00

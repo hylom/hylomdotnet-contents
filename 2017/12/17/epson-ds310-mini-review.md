@@ -1,7 +1,7 @@
 ---
 slug: epson-ds310-mini-review
 title: 小型のドキュメントスキャナ「EPSON DS-310」導入レポート
-tags: [ report ]
+tag: [ report ]
 date: 2017-12-17T21:41:14+09:00
 lastmod: 2017-12-17T22:56:59+09:00
 publishDate: 2017-12-17T21:41:14+09:00

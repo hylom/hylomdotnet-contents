@@ -1,7 +1,7 @@
 ---
 slug: how-to-use-macbook-air-with-comfort
 title: 標準構成のMacBook Airを快適に使うための小ネタ
-tags: [ essay ]
+tag: [ essay ]
 date: 2014-06-05T16:43:01+09:00
 lastmod: 2014-06-05T16:54:51+09:00
 publishDate: 2014-06-05T16:43:01+09:00

@@ -1,7 +1,7 @@
 ---
 slug: samba-directory-premission-problem
 title: Sambaで共有したディレクトリ内のパーミッション問題
-tags: [ linux, tips ]
+tag: [ linux, tips ]
 date: 2015-02-27T19:36:50+09:00
 lastmod: 2015-02-27T19:36:59+09:00
 publishDate: 2015-02-27T19:36:50+09:00

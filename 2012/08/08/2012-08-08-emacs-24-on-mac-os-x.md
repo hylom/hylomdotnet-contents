@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-08-08T14:02:42+00:00
 url: /2012/08/08/emacs-24-on-mac-os-x/
-categories:
+category:
   - Hacks
 tags:
   - emacs

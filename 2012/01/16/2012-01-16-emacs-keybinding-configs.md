@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-01-16T11:06:30+00:00
 url: /2012/01/16/emacs-keybinding-configs/
-categories:
+category:
   - 未分類
 
 ---

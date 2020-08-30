@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-03-07T13:40:50+00:00
 url: /2012/03/07/windows-azure-memo-1/
-categories:
+category:
   - Hacks
 tags:
   - azure

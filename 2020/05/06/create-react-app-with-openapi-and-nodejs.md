@@ -1,7 +1,7 @@
 ---
 slug: create-react-app-with-openapi-and-nodejs
 title: GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）
-tags: [ node.js, javascript, software, development ]
+tag: [ node.js, javascript, software, development ]
 date: 2020-05-06T15:00:44+09:00
 lastmod: 2020-05-06T19:17:17+09:00
 publishDate: 2020-05-06T15:00:44+09:00

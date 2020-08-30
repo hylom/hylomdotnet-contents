@@ -1,7 +1,7 @@
 ---
 slug: commit-message-in-english-part2
 title: 英語によるコミットメッセージ文例その2
-tags: [ english ]
+tag: [ english ]
 date: 2016-09-22T01:04:10+09:00
 lastmod: 2016-09-22T01:04:10+09:00
 publishDate: 2016-09-22T01:04:10+09:00

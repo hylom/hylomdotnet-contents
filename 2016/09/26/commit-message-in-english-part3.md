@@ -1,7 +1,7 @@
 ---
 slug: commit-message-in-english-part3
 title: 英語によるコミットメッセージ文例その3
-tags: [ english ]
+tag: [ english ]
 date: 2016-09-26T23:45:21+09:00
 lastmod: 2016-09-26T23:45:21+09:00
 publishDate: 2016-09-26T23:45:21+09:00

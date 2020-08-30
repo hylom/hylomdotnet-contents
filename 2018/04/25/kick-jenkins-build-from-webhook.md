@@ -1,7 +1,7 @@
 ---
 slug: kick-jenkins-build-from-webhook
 title: JenkinsのWebフックによるビルド設定メモ
-tags: [ jenkins ]
+tag: [ jenkins ]
 date: 2018-04-25T22:15:53+09:00
 lastmod: 2018-04-25T22:16:11+09:00
 publishDate: 2018-04-25T22:15:53+09:00

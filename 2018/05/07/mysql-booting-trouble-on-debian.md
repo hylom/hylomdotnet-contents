@@ -1,7 +1,7 @@
 ---
 slug: mysql-booting-trouble-on-debian
 title: Debianで突然mysqlサービスが起動しなくなった
-tags: [ linux,mysql ]
+tag: [ linux,mysql ]
 date: 2018-05-07T14:02:44+09:00
 lastmod: 2018-05-07T14:03:08+09:00
 publishDate: 2018-05-07T14:02:44+09:00

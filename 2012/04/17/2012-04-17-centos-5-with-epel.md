@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-04-17T05:14:56+00:00
 url: /2012/04/17/centos-5-with-epel/
-categories:
+category:
   - Hacks
 tags:
   - centos

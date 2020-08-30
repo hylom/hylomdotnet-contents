@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-08-24T17:02:08+00:00
 url: /2010/08/25/ssh-multiple-conection/
-categories:
+category:
   - Docs
 
 ---

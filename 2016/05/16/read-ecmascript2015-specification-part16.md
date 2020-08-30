@@ -1,7 +1,7 @@
 ---
 slug: read-ecmascript2015-specification-part16
 title: ECMAScript 2015の仕様書を読む（その16）
-tags: [ ecmascript, javascript ]
+tag: [ ecmascript, javascript ]
 date: 2016-05-16T22:56:04+09:00
 lastmod: 2016-05-16T22:56:04+09:00
 publishDate: 2016-05-16T22:56:04+09:00

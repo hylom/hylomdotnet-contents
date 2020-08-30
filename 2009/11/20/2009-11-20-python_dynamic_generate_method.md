@@ -5,7 +5,7 @@ type: post
 date: 2009-11-19T18:09:31+00:00
 excerpt: '<p>　Pythonには動的に関数を作ったり、クラスのメソッド呼び出しをカスタマイズするための機構が用意されています。ということで、それを使って遊んでみた。</p>'
 url: /2009/11/20/python_dynamic_generate_method/
-categories:
+category:
   - Docs
 
 ---

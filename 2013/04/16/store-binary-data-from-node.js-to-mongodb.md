@@ -1,7 +1,7 @@
 ---
 slug: store-binary-data-from-node.js-to-mongodb
 title: Node.jsからMongoDBにバイナリデータを格納する
-tags: [ Node.js, MongoDB, programming ]
+tag: [ Node.js, MongoDB, programming ]
 date: 2013-04-16T02:25:39+09:00
 lastmod: 2013-04-16T23:34:48+09:00
 publishDate: 2013-04-16T02:25:39+09:00

@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2011-03-01T11:01:39+00:00
 url: /2011/03/01/how-to-reset-remote-git-branch/
-categories:
+category:
   - Docs
 tags:
   - development

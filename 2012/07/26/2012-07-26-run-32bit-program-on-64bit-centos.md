@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2012-07-26T09:17:02+00:00
 url: /2012/07/26/run-32bit-program-on-64bit-centos/
-categories:
+category:
   - Hacks
 tags:
   - centos

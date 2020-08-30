@@ -1,7 +1,7 @@
 ---
 slug: custom-rules-in-system-config-firewall
 title: CentOS（RHEL） 6のsystem-config-firewallでカスタムルールを使っている場合の注意
-tags: [ firewall, centos6, rhel6, configure ]
+tag: [ firewall, centos6, rhel6, configure ]
 date: 2012-10-12T18:36:03+09:00
 lastmod: 2012-10-12T18:36:03+09:00
 publishDate: 2012-10-12T18:36:03+09:00

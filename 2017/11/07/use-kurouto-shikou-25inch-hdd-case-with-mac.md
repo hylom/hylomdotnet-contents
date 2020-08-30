@@ -1,7 +1,7 @@
 ---
 slug: use-kurouto-shikou-25inch-hdd-case-with-mac
 title: 玄人志向の2.5インチ×2が入るHDDケースをMacで使う
-tags: [ storage, Mac ]
+tag: [ storage, Mac ]
 date: 2017-11-07T23:41:10+09:00
 lastmod: 2017-11-07T23:54:20+09:00
 publishDate: 2017-11-07T23:41:10+09:00

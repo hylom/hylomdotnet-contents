@@ -1,7 +1,7 @@
 ---
 slug: update-hylomdotnet-2013-march
 title: hylom.netのアップデート
-tags: [ node.js, hylom.net ]
+tag: [ node.js, hylom.net ]
 date: 2013-03-18T00:13:34+09:00
 lastmod: 2013-03-18T00:15:54+09:00
 publishDate: 2013-03-18T00:13:34+09:00

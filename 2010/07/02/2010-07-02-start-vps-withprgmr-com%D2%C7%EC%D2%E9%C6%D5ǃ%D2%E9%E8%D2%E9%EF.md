@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-07-02T07:49:58+00:00
 url: /2010/07/02/start-vps-withprgmr-com」を借りる/
-categories:
+category:
   - Docs
 tags:
   - hosting

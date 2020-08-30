@@ -1,7 +1,7 @@
 ---
 slug: enable-directory-access-when-selinux-enabled
 title: SELinux有効下でhttpdから特定のディレクトリへのアクセスを許可する
-tags: [ selinux, security ]
+tag: [ selinux, security ]
 date: 2013-06-03T17:30:06+09:00
 lastmod: 2013-09-20T19:55:46+09:00
 publishDate: 2013-06-03T17:30:06+09:00

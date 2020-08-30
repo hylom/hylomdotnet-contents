@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-10-24T15:55:22+00:00
 url: /2010/10/25/python-urllib2-cookie/
-categories:
+category:
   - Docs
 tags:
   - programming

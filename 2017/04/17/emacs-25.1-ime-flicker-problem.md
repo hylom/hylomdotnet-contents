@@ -1,7 +1,7 @@
 ---
 slug: emacs-25.1-ime-flicker-problem
 title: Mac OS X向けEmacs 25.1で日本語入力時にちらつく問題の原因
-tags: [ emacs ]
+tag: [ emacs ]
 date: 2017-04-17T00:26:43+09:00
 lastmod: 2017-05-21T01:27:49+09:00
 publishDate: 2017-04-17T00:26:43+09:00

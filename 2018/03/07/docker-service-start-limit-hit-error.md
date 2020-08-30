@@ -1,7 +1,7 @@
 ---
 slug: docker-service-start-limit-hit-error
 title: 「start-limit-hit」といったメッセージが出てdocker serviceの起動に失敗した場合の対処法
-tags: [ docker, linux ]
+tag: [ docker, linux ]
 date: 2018-03-07T17:14:13+09:00
 lastmod: 2018-03-07T17:15:07+09:00
 publishDate: 2018-03-07T17:14:13+09:00

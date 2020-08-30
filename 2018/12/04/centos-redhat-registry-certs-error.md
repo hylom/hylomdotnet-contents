@@ -1,7 +1,7 @@
 ---
 slug: centos-redhat-registry-certs-error
 title: CentOS＋Docker関連でregistry.access.redhat.comのDockerレジストリからpullできなくなった場合の対処
-tags: [ centos, linux ]
+tag: [ centos, linux ]
 date: 2018-12-04T18:46:37+09:00
 lastmod: 2018-12-04T18:51:53+09:00
 publishDate: 2018-12-04T18:46:37+09:00

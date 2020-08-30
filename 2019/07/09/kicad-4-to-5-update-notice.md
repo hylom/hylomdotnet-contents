@@ -1,7 +1,7 @@
 ---
 slug: kicad-4-to-5-update-notice
 title: KiCAD 4系からKiCAD 5系にアップデートするときにGitHub経由でフットプリントライブラリを参照するようにしているとハマる
-tags: [ kicad ]
+tag: [ kicad ]
 date: 2019-07-09T02:33:31+09:00
 lastmod: 2019-07-09T02:33:47+09:00
 publishDate: 2019-07-09T02:33:31+09:00

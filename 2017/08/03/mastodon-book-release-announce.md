@@ -1,7 +1,7 @@
 ---
 slug: mastodon-book-release-announce
 title: Mastodon入門書（電子書籍）を書きました
-tags: [ mastodon ]
+tag: [ mastodon ]
 date: 2017-08-03T23:26:02+09:00
 lastmod: 2017-08-03T23:26:14+09:00
 publishDate: 2017-08-03T23:26:02+09:00

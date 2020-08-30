@@ -1,7 +1,7 @@
 ---
 slug: access-to-mp3-m4a-tags-by-avasset
 title: AVFoundation小ネタ1：AVAssetを使ってmp3やm4aのタグ情報を取得する
-tags: [ swift, osx ]
+tag: [ swift, osx ]
 date: 2017-05-21T01:28:53+09:00
 lastmod: 2017-05-21T01:29:13+09:00
 publishDate: 2017-05-21T01:28:53+09:00

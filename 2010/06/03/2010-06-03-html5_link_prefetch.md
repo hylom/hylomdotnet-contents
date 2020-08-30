@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-06-03T03:42:08+00:00
 url: /2010/06/03/html5_link_prefetch/
-categories:
+category:
   - Docs
 tags:
   - html5

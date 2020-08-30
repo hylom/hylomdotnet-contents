@@ -1,7 +1,7 @@
 ---
 slug: emacs-magit-git-path
 title: Emacsのmagitで使用するgitバイナリのパスを指定する方法
-tags: [ emacs, git ]
+tag: [ emacs, git ]
 date: 2020-07-20T19:28:04+09:00
 lastmod: 2020-07-20T19:30:29+09:00
 publishDate: 2020-07-20T19:28:04+09:00

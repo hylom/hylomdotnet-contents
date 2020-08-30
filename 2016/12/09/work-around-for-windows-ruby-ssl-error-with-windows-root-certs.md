@@ -1,7 +1,7 @@
 ---
 slug: work-around-for-windows-ruby-ssl-error-with-windows-root-certs
 title: Windows環境でのRubyのSSLエラー対策（Windowsが管理するルート証明書を使う）
-tags: [ windows, ruby ]
+tag: [ windows, ruby ]
 date: 2016-12-09T19:24:38+09:00
 lastmod: 2016-12-09T19:25:45+09:00
 publishDate: 2016-12-09T19:24:38+09:00

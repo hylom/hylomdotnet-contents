@@ -1,7 +1,7 @@
 ---
 slug: where-i-learn-programming-knowledge-from
 title: プログラミングにおいて重要な知識をどこから学んだか
-tags: [ programming ]
+tag: [ programming ]
 date: 2012-10-17T16:34:25+09:00
 lastmod: 2012-10-17T16:34:25+09:00
 publishDate: 2012-10-17T16:34:25+09:00

@@ -1,7 +1,7 @@
 ---
 slug: macOS-app-develop-with-storyboard-and-coredata
 title: macOSアプリ開発でStoryboard＋Core Dataを使うときのハマり話
-tags: [ macos, programming ]
+tag: [ macos, programming ]
 date: 2017-04-09T22:55:35+09:00
 lastmod: 2017-04-10T00:57:33+09:00
 publishDate: 2017-04-09T22:55:35+09:00

@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-02-02T06:32:06+00:00
 url: /2010/02/02/python_mako_intro/
-categories:
+category:
   - Docs
 tags:
   - mako

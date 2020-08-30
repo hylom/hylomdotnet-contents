@@ -5,7 +5,7 @@ type: post
 date: 2010-10-29T09:01:52+00:00
 draft: true
 url: /?p=1354
-categories:
+category:
   - Docs
 tags:
   - debian

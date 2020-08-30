@@ -1,7 +1,7 @@
 ---
 slug: use-mojolicious-with-centos7
 title: CentOS 7でMojoliciousを使う
-tags: [ perl ]
+tag: [ perl ]
 date: 2017-03-09T19:58:29+09:00
 lastmod: 2017-03-09T19:58:38+09:00
 publishDate: 2017-03-09T19:58:29+09:00

@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-05-31T10:43:54+00:00
 url: /2010/05/31/python_hatebu_withxmlrpclib/
-categories:
+category:
   - Docs
 tags:
   - module

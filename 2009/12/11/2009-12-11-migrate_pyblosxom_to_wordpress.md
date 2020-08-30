@@ -5,7 +5,7 @@ type: post
 date: 2009-12-10T15:54:45+00:00
 excerpt: '<p>　以前このブログはPythonで書かれたブログシステム「<a href="http://pyblosxom.sourceforge.net/">pyblosxom</a>」を使って運用していたんだけど、機能拡張が面倒臭かった（＆色々細かいところが気にくわなかった）ので先日WordPressに移行しました。そこで面倒だったのが記事の移行。WordPressではMovableTypeとかBloggerとかからの移行ツールは充実しているんだけど、pyblosxomからの移行ツールは公式には用意されていません。また、参考情報としてWordPressの公式サイトで紹介されていた<a href="http://blog.unto.net/meta/migrating-from-blosxom-to-wordpress/">blosxomからの移行スクリプト</a>はURLやタグ情報を移行してくれなかったため、結局自前で変換スクリプトを用意することに。</p>'
 url: /2009/12/11/migrate_pyblosxom_to_wordpress/
-categories:
+category:
   - Docs
 tags:
   - pybloxsom

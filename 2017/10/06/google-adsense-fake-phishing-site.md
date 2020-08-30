@@ -1,7 +1,7 @@
 ---
 slug: google-adsense-fake-phishing-site
 title: Google Adsense/Adwords公式サイトのように偽装したフィッシングサイトにご注意を
-tags: [ security ]
+tag: [ security ]
 date: 2017-10-06T17:45:26+09:00
 lastmod: 2017-10-06T18:03:05+09:00
 publishDate: 2017-10-06T17:45:26+09:00

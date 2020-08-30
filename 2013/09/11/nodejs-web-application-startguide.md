@@ -1,7 +1,7 @@
 ---
 slug: nodejs-web-application-startguide
 title: Node.jsでWebAppの開発に必要なN個のこと 
-tags: [ node.js ]
+tag: [ node.js ]
 date: 2013-09-11T00:43:00+09:00
 lastmod: 2013-09-11T00:44:57+09:00
 publishDate: 2013-09-11T00:43:00+09:00

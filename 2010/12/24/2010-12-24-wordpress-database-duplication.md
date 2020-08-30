@@ -5,7 +5,7 @@ type: post
 date: 2010-12-24T00:00:00+09:00
 draft: true
 url: /?p=1367
-categories:
+category:
   - 未分類
 
 ---

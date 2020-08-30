@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-02-09T15:51:57+00:00
 url: /2010/02/10/urllib_and_urllib2_usag/
-categories:
+category:
   - Docs
 tags:
   - library

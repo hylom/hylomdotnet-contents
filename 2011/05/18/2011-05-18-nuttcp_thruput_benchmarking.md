@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2011-05-18T09:40:48+00:00
 url: /2011/05/18/nuttcp_thruput_benchmarking/
-categories:
+category:
   - Docs
 
 ---

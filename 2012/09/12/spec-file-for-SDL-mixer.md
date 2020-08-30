@@ -1,7 +1,7 @@
 ---
 slug: spec-file-for-SDL-mixer
 title: SDL_mixerのspecファイル
-tags: [ rpm, centos, programming ]
+tag: [ rpm, centos, programming ]
 date: 2012-09-12T16:54:03+09:00
 lastmod: 2013-04-16T23:38:29+09:00
 publishDate: 2012-09-12T16:54:03+09:00

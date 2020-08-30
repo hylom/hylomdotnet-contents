@@ -1,7 +1,7 @@
 ---
 slug: python-binary-indexed-access
 title: 「Pythonではバイナリファイルを操作したい時にバイナリ列をリストに変換して操作した後にまたバイナリ列に戻さなければならない」というのは不正確
-tags: [ python, programming ]
+tag: [ python, programming ]
 date: 2020-05-23T15:31:09+09:00
 lastmod: 2020-05-23T15:47:23+09:00
 publishDate: 2020-05-23T15:31:09+09:00

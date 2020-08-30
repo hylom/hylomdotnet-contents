@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2011-05-26T10:43:11+00:00
 url: /2011/05/26/centos-5-xen-install/
-categories:
+category:
   - Docs
 tags:
   - centos

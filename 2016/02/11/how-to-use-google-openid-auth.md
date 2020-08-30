@@ -1,7 +1,7 @@
 ---
 slug: how-to-use-google-openid-auth
 title: 独自WebサービスにGoogleアカウントを使った認証を実装する
-tags: [ google, openid, develoer ]
+tag: [ google, openid, develoer ]
 date: 2016-02-11T23:42:51+09:00
 lastmod: 2016-02-11T23:44:58+09:00
 publishDate: 2016-02-11T23:42:51+09:00

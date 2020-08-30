@@ -1,7 +1,7 @@
 ---
 slug: iodrive-with-ubuntu-1804
 title: Ubuntu 18.04でioDriveを使う
-tags: [ ubntu, linux ]
+tag: [ ubntu, linux ]
 date: 2019-01-29T17:31:54+09:00
 lastmod: 2019-05-17T22:24:57+09:00
 publishDate: 2019-01-29T17:31:54+09:00

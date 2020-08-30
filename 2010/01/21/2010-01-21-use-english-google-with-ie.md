@@ -12,7 +12,7 @@ excerpt: |
   
   <p>　以上、小ネタでした。
 url: /2010/01/21/use-english-google-with-ie/
-categories:
+category:
   - Docs
 
 ---

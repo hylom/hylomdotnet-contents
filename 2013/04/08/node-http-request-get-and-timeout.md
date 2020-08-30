@@ -1,7 +1,7 @@
 ---
 slug: node-http-request-get-and-timeout
 title: Node.jsのhttp.request関数/http.get関数とタイムアウト
-tags: [ node, programming, network ]
+tag: [ node, programming, network ]
 date: 2013-04-08T01:18:39+09:00
 lastmod: 2013-04-16T21:59:13+09:00
 publishDate: 2013-04-08T01:18:39+09:00

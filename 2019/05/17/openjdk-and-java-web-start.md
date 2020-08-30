@@ -1,7 +1,7 @@
 ---
 slug: openjdk-and-java-web-start
 title: openJDKでJava Web Startを使う
-tags: [ java ]
+tag: [ java ]
 date: 2019-05-17T20:16:33+09:00
 lastmod: 2019-05-17T20:17:23+09:00
 publishDate: 2019-05-17T20:16:33+09:00

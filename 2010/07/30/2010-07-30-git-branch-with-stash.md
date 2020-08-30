@@ -4,7 +4,7 @@ author: hylom
 type: post
 date: 2010-07-30T00:32:22+00:00
 url: /2010/07/30/git-branch-with-stash/
-categories:
+category:
   - Docs
 tags:
   - git
