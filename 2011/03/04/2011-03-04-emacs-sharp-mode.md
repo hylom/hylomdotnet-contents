@@ -6,7 +6,7 @@ date: 2011-03-04T09:31:48+00:00
 url: /2011/03/04/emacs-sharp-mode/
 category:
   - Docs
-tags:
+tag:
   - csharp
   - emacs
 

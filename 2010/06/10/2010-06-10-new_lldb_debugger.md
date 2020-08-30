@@ -6,7 +6,7 @@ date: 2010-06-10T11:57:19+00:00
 url: /2010/06/10/new_lldb_debugger/
 category:
   - Docs
-tags:
+tag:
   - debug
   - develop
 

@@ -7,7 +7,7 @@ draft: true
 url: /?p=1354
 category:
   - Docs
-tags:
+tag:
   - debian
   - linux
   - virtualization

@@ -6,7 +6,7 @@ date: 2009-08-12T09:58:41+00:00
 url: /2009/08/12/20090812_permission_on_vosta/
 category:
   - Docs
-tags:
+tag:
   - windows
 
 ---

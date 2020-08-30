@@ -6,7 +6,7 @@ date: 2010-10-17T09:16:41+00:00
 url: /2010/10/17/play-with-desmume-and-colors/
 category:
   - Docs
-tags:
+tag:
   - Emulator
   - NDS
   - Software

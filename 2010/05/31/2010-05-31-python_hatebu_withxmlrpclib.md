@@ -6,7 +6,7 @@ date: 2010-05-31T10:43:54+00:00
 url: /2010/05/31/python_hatebu_withxmlrpclib/
 category:
   - Docs
-tags:
+tag:
   - module
   - python
   - xmlrpclib

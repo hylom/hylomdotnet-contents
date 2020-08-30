@@ -6,7 +6,7 @@ date: 2011-12-05T16:31:57+00:00
 url: /2011/12/06/fedora16_on_virtualbox_with_gnome_shell/
 category:
   - Hacks
-tags:
+tag:
   - fedora
   - gnome
   - virtualbox

@@ -6,7 +6,7 @@ date: 2010-07-28T13:34:04+00:00
 url: /2010/07/28/encode-for-iphone4-with-handbrake/
 category:
   - Docs
-tags:
+tag:
   - codec
   - Handbrake
   - ipad

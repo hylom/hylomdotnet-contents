@@ -6,7 +6,7 @@ date: 2010-10-24T15:55:22+00:00
 url: /2010/10/25/python-urllib2-cookie/
 category:
   - Docs
-tags:
+tag:
   - programming
   - python
   - www

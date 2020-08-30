@@ -6,7 +6,7 @@ date: 2012-03-16T13:17:31+00:00
 url: /2012/03/16/windows-azureメモその2：azure-drive/
 category:
   - Hacks
-tags:
+tag:
   - azure
   - programming
   - windowsazure

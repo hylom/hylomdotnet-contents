@@ -6,7 +6,7 @@ date: 2011-02-21T09:03:46+00:00
 url: /2011/02/21/python-sql-indenting/
 category:
   - Docs
-tags:
+tag:
   - programming
   - python
   - sql

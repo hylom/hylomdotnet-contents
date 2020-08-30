@@ -6,7 +6,7 @@ date: 2009-10-21T17:31:12+00:00
 url: /2009/10/22/wordpress導入/
 category:
   - Docs
-tags:
+tag:
   - pyblosxom
   - wordpress
 

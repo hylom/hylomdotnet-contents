@@ -6,7 +6,7 @@ date: 2010-09-09T09:45:41+00:00
 url: /2010/09/09/firefox-java-plugin-with-centos-64bit/
 category:
   - Docs
-tags:
+tag:
   - centos
   - linux
   - tips

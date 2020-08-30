@@ -7,7 +7,7 @@ excerpt: '<p>　以前このブログはPythonで書かれたブログシステ�
 url: /2009/12/11/migrate_pyblosxom_to_wordpress/
 category:
   - Docs
-tags:
+tag:
   - pybloxsom
   - python
   - wordpress

@@ -7,7 +7,7 @@ excerpt: 　最近久しぶりにgitを触って色々と忘れていたので�
 url: /2009/12/02/git_diff_rese/
 category:
   - Docs
-tags:
+tag:
   - git
   - programming
 

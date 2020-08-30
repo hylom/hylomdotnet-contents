@@ -7,7 +7,7 @@ excerpt: リコーが、「ユニット交換式」なるデジカメを発表�
 url: /2009/11/12/degital_camera_gx/
 category:
   - News
-tags:
+tag:
   - camera
   - gadget
   - Opinion

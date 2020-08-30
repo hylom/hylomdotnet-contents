@@ -6,7 +6,7 @@ date: 2009-12-17T06:54:01+00:00
 url: /2009/12/17/handbrake-0-9-3-jp-makin/
 category:
   - Handbrake
-tags:
+tag:
   - Handbrake
 
 ---

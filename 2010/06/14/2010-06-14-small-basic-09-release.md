@@ -6,7 +6,7 @@ date: 2010-06-14T04:20:56+00:00
 url: /2010/06/14/small-basic-09-release/
 category:
   - News
-tags:
+tag:
   - basic
   - programming
 

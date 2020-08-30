@@ -6,7 +6,7 @@ date: 2009-12-31T09:36:03+00:00
 url: /2009/12/31/handbrake094r1_release/
 category:
   - Handbrake
-tags:
+tag:
   - Handbrake
   - release
 

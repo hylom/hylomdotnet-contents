@@ -6,7 +6,7 @@ date: 2010-07-02T07:49:58+00:00
 url: /2010/07/02/start-vps-withprgmr-com」を借りる/
 category:
   - Docs
-tags:
+tag:
   - hosting
   - vps
   - web

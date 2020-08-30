@@ -6,7 +6,7 @@ date: 2010-05-18T11:27:36+00:00
 url: /2010/05/18/python_with_statemen/
 category:
   - Docs
-tags:
+tag:
   - programming
   - python
 

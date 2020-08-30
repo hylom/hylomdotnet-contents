@@ -6,7 +6,7 @@ date: 2010-02-02T06:32:06+00:00
 url: /2010/02/02/python_mako_intro/
 category:
   - Docs
-tags:
+tag:
   - mako
   - programming
   - python

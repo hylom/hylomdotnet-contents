@@ -6,7 +6,7 @@ date: 2011-03-03T09:43:01+00:00
 url: /2011/03/03/maildir-with-japanese-folder-name/
 category:
   - Docs
-tags:
+tag:
   - japanese
   - mail
   - maildir

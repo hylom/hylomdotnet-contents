@@ -6,7 +6,7 @@ date: 2012-07-24T09:25:48+00:00
 url: /2012/07/24/centos-initial-setup/
 category:
   - 未分類
-tags:
+tag:
   - centos
   - hack
   - linux

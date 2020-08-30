@@ -7,7 +7,7 @@ excerpt: 　Wordpressの新バージョン（2.8.5）が出ていたので、ア
 url: /2009/11/09/wordpress_updat/
 category:
   - Docs
-tags:
+tag:
   - wordpress
 
 ---

@@ -6,7 +6,7 @@ date: 2010-07-27T17:10:30+00:00
 url: /2010/07/28/linux-freebsd-benchmark/
 category:
   - News
-tags:
+tag:
   - benchmark
   - freebsd
   - linux
