@@ -25,7 +25,7 @@ tag:
 　続いて[java.comのダウンロードページ][1]から「Linux x64 RPM」をダウンロード。
 
 <div style="width: 510px" class="wp-caption aligncenter">
-  <img alt="「Linux x86 RPM」をダウンロードする" src="http://hylom.net/img/blog/100909/dl_jre.png" title="「Linux x86 RPM」をダウンロードする" width="500" height="238" />
+  <img alt="「Linux x86 RPM」をダウンロードする" src="/img/blog/100909/dl_jre.png" title="「Linux x86 RPM」をダウンロードする" width="500" height="238" />
   
   <p class="wp-caption-text">
     「Linux x86 RPM」をダウンロードする

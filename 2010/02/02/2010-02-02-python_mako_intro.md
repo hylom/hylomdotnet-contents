@@ -16,7 +16,7 @@ tag:
 　最近Pythonのテンプレートエンジン「[Mako][1]」を触ってるんだけど、日本語の情報が全然ないのでまとめてみる。
 
 <div style="width: 460px" class="wp-caption aligncenter">
-  <a href="http://www.makotemplates.org/"><img alt="Mako公式Webサイト" src="http://hylom.net/img/blog/100202/mako_web.png" title="Mako公式Webサイト" width="450" height="261" /></a>
+  <a href="http://www.makotemplates.org/"><img alt="Mako公式Webサイト" src="/img/blog/100202/mako_web.png" title="Mako公式Webサイト" width="450" height="261" /></a>
   
   <p class="wp-caption-text">
     Mako公式Webサイト

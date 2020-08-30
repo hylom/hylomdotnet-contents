@@ -10,10 +10,10 @@ publishDate: 2020-05-06T15:00:44+09:00
 　世間は5連休ですが、特に出かけることもできず、日曜大工や電子工作の材料も入手ができずと普段休日にやっていることをほぼ封じられている毎日です。しょうがないので、前から触ってみたかったReactを使って、前から欲しいと思っていた電子書籍管理アプリを作ってみたレポートです。
 
  - GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
- - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](http://hylom.net/convert-react-app-to-electron-app)
- - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+ - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](/2020/05/06/generate-thumbnail-image-from-pdf-with-nodejs)
+ - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](/2020/05/06/show-image-dynamically-by-react)
+ - [Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化](/2020/05/06/convert-react-app-to-electron-app)
+ - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](/2020/05/06/handling-double-click-event-in-react)
 
 
 　仕事ではないので、特に事前調査などをせずに行き当たりばったりでコードを書いていきます。また、このレポート記事も（仕事ではないので）Twitter並みに雑にやった作業を書いていきます（ちなみに、記事を書いているのはリアルタイムではありません。メモ書きはリアルタイムでやっていますが、整理・校正は5日目にまとめてやっています）。

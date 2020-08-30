@@ -12,7 +12,7 @@ category:
 　自分が日本語化ファイルを作っているバージョン管理ツール、TortoiseGitの日本語言語ファイルをアップデートしました（[プロジェクトニュース][1]）。TortoiseGit 1.2.1.0向けの1st releaseとなります。ダウンロードは[SourceForge.JPのプロジェクトページ][2]からどうぞ。
 
 <div style="width: 410px" class="wp-caption aligncenter">
-  <img alt="TortoiseGit 1.2.1.0" src="http://hylom.net/img/blog/091203/tgit_s.png" title="TortoiseGit 1.2.1.0" width="400" height="404" />
+  <img alt="TortoiseGit 1.2.1.0" src="/img/blog/091203/tgit_s.png" title="TortoiseGit 1.2.1.0" width="400" height="404" />
   
   <p class="wp-caption-text">
     TortoiseGit 1.2.1.0

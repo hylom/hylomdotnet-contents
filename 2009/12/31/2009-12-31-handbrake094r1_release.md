@@ -20,7 +20,7 @@ tag:
 　また、プリセットのロード/セーブに失敗するという話があります。こちらも現在確認中です……。
 
 <div style="width: 410px" class="wp-caption aligncenter">
-  <a href="http://hylom.net/img/blog/091231/handbrake094r1.png"><img alt="HandBrake日本語版 0.9.4" src="http://hylom.net/img/blog/091231/handbrake094r1_s.png" title="HandBrake日本語版 0.9.4" width="400" height="244" /></a>
+  <a href="/img/blog/091231/handbrake094r1.png"><img alt="HandBrake日本語版 0.9.4" src="/img/blog/091231/handbrake094r1_s.png" title="HandBrake日本語版 0.9.4" width="400" height="244" /></a>
   
   <p class="wp-caption-text">
     HandBrake日本語版 0.9.4

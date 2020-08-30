@@ -19,7 +19,7 @@ tag:
 　ちなみに0.9.4の新機能の1つは「プレビュー」機能。結構便利。
 
 <div style="width: 410px" class="wp-caption aligncenter">
-  <img alt="HandBrake 0.9.4の新機能、「プレビュー」" src="http://hylom.net/img/blog/091217/handbrake_preview.png" title="HandBrake 0.9.4の新機能、「プレビュー」" width="400" height="331" />
+  <img alt="HandBrake 0.9.4の新機能、「プレビュー」" src="/img/blog/091217/handbrake_preview.png" title="HandBrake 0.9.4の新機能、「プレビュー」" width="400" height="331" />
   
   <p class="wp-caption-text">
     HandBrake 0.9.4の新機能、「プレビュー」

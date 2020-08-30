@@ -9,11 +9,11 @@ publishDate: 2020-05-06T17:13:39+09:00
 
 　サムネイル画像表示ができたので、本日はこのアプリをアプリフレームワーク[Electron](https://www.electronjs.org)を使ってスタンドアロンで動作するアプリケーション化してみます。
 
- - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](http://hylom.net/create-react-app-with-openapi-and-nodejs)
- - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](http://hylom.net/generate-thumbnail-image-from-pdf-with-nodejs)
- - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](http://hylom.net/show-image-dynamically-by-react)
+ - [GW引き篭もりチャレンジ：Reactでアプリを作ってみる（1日目）](/2020/05/06/create-react-app-with-openapi-and-nodejs)
+ - [Reactでアプリを作ってみる（2日目） - PDFからのサムネイル生成](/2020/05/06/generate-thumbnail-image-from-pdf-with-nodejs)
+ - [Reactでアプリを作ってみる（3日目） - コンテンツの動的な表示](/2020/05/06/show-image-dynamically-by-react)
  - Reactでアプリを作ってみる（4日目） - Electronを使ったアプリ化
- - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](http://hylom.net/handling-double-click-event-in-react)
+ - [Reactでアプリを作ってみる（5日目） - ダブルクリックでファイルを開く](/2020/05/06/handling-double-click-event-in-react)
 
 ### WebアプリをElectronアプリ化する際の要件
 
