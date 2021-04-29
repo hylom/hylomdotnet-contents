@@ -11,7 +11,7 @@ publishDate: 2021-04-29T15:15:00+09:00
 
 ## macOS環境でのcmark-gfmのビルドとインストール
 
-　cmark-gfmのリポジトリではバイナリは提供されていないので、自前でビルドする必要があります。macOS環境（Xcode）でのビルドもされていますが、[CMake](https://cmake.org/)を利用するので別途インストールしておく必要があります。CMakeは公式にmacOS向けのバイナリが提供されているので、dmgファイルもしくはtar.gzファイルをダウンロードして`/Applications`ディレクトリにコピーすればOKです。`cmake`コマンド自体はアプリケーションバンドル中の`Contents/bin`ディレクトリ内に入っているので、適当にパスを通すなり直接フルパスで実行するなりします。
+　cmark-gfmのリポジトリではバイナリは提供されていないので、自前でビルドする必要があります。macOS環境（Xcode）でのビルドには[CMake](https://cmake.org/)が必要となるので、まずこちらの準備を行います。CMakeは公式にmacOS向けのバイナリが提供されているので、dmgファイルもしくはtar.gzファイルをダウンロードしてその中身を`/Applications`ディレクトリにコピーすればOKです。`cmake`コマンド自体はアプリケーションバンドル中の`Contents/bin`ディレクトリ内に入っているので、適当にパスを通すなり直接フルパスで実行するなりします。
 
 　`cmark-gfm`のビルドは次のような感じで実行します。
 
@@ -25,7 +25,7 @@ $ make test
 $ make install
 ```
 
-　システムツール以外は出来るだけ`~/local`以下にインストールしたい勢なので、`cmake`実行時に`-DCMAKE_INSTALL_PREFIX=~/local`を指定してインストール先をデフォルトの`/usr/local/`以下から変更しています。ただしこの場合、rpathの自動設定はしてくれないようなので、追加で`-DCMAKE_INSTALL_RPATH=$HOME/local/lib`オプションでrpathを指定します。このオプションは指定したパスを直接rpathとしてバイナリに書き込むので、`~/`表記は利用できないようです。このオプションを指定しないと、インストール後に次のようなエラーが出ます
+　システムツール以外はできるだけ`~/local`以下にインストールしたい勢なので、`cmake`実行時に`-DCMAKE_INSTALL_PREFIX=~/local`を指定してインストール先をデフォルトの`/usr/local/`以下から変更しています。ただしこの場合、rpathの自動設定はしてくれないようなので、追加で`-DCMAKE_INSTALL_RPATH=$HOME/local/lib`オプションでrpathを指定します。このオプションでは指定したパスを直接rpathとしてバイナリに書き込むので、`~/`表記は利用できないようです。このオプションを指定しないと、インストール後に次のようなエラーが出ます
 
 ```
 $ cmark-gfm 
@@ -51,7 +51,7 @@ cmark-gfm:
 
 　`markdown-mode`ではMarkdown形式ファイルのコンパイルに使用するコマンドを`markdown-command`変数で指定できます。これはおなじみ`customize`コマンドで簡単に設定できます。`M-x customize`実行後、`markdown`キーワードで設定パラメータを検索して変更しておきましょう。なお、GitHub向け拡張はエクステンションとして実装されているので、これらを利用するには`-e`オプションで明示的に有効にする必要があります。たとえば`|`を使ったテーブル表記を利用するには、`cmark-gfm -e table`のようにオプション付きの値を`markdown-command`パラメータに指定する必要があります
 
-　また、`cmark-gfm`は入力中にUTF-8以外のいわゆる2バイト文字が含まれると、うまく動かないことがあるようです。というか、なぜかUTF-8以外の2バイト文字があると、`-e table`オプションを有効にしても`|`によるテーブル表記だけがピンポイントで無視されてハマりました。
+　また、`cmark-gfm`はUTF-8以外の文字コードに対応していないようです。なぜかUTF-8以外でエンコードされた日本語の場合、`-e table`オプションを有効にしても`|`によるテーブル表記だけがピンポイントで無視されてハマりました。
 
 　`markdown-mode`は`markdown-command`で指定したコマンドを実行する際に、elispの`call-process-region`を使ってEmacsバッファの内容をコマンドに与えているので、.emacsに下記の内容を追加して、`markdown-mode`ではUTF-8でバッファの入出力を行うよう指定します。
 
@@ -62,5 +62,7 @@ cmark-gfm:
 
 ## markdown-preview-modeを使う
 
-　ついでに`markdown-preview-mode`を利用すると、こんな感じでリアルタイムでレンダリング結果をプレビューできて便利です。こちらも`M-x package-list-packages`でインストールできます。
+![markdown-preview-mode](/2021/04/29/markdown-preview.png "markdown-preview-modeの実行例")
+
+　ついでに`markdown-preview-mode`を利用すると、こんな感じでリアルタイムでレンダリング結果をプレビューできてとても便利です。こちらも`M-x package-list-packages`でインストールできます。
 
