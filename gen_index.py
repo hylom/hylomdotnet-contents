@@ -2,11 +2,12 @@
 
 from pathlib import Path
 import re
+import sys
 
-def generate_index(p, dir_stack=[]):
+def generate_index(p, dir_stack=[], force=False):
     # generate _index.md
     index_md = p / '_index.md'
-    if (not index_md.exists()
+    if ((not index_md.exists() or force)
         and len(dir_stack) != 0
         and re.match(r'^\d+$', p.name)):
         with index_md.open(mode='w', encoding="utf8") as fp:
@@ -19,7 +20,7 @@ def generate_index(p, dir_stack=[]):
         if child.is_dir():
             stack = list(dir_stack)
             stack.append(child.name)
-            generate_index(child, stack)
+            generate_index(child, stack, force)
 
 
 def generate_header(p, stack):
@@ -35,9 +36,14 @@ def generate_header(p, stack):
     return ""
                      
 def main():
+    force = False
+    if len(sys.argv) > 1:
+        for arg in sys.argv[1:]:
+            if arg == "-f":
+                force = True
     path = "."
     p = Path(path)
-    generate_index(p)
+    generate_index(p, force=force)
 
 if __name__ == '__main__':
     main()
