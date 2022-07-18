@@ -2,14 +2,14 @@
 slug: introduce-razer-blackwidow-v3-mini
 title: テンキーレスミニキーボード「Razer BlackWidow V3 Mini」を使ってみた
 tag: [ keyboard, emacs ]
-date: 2022-07-18T18:00:00+09:00
-lastmod: 2022-07-18T18:00:00+09:00
-publishDate: 2022-07-18T18:00:00+09:00
+date: 2022-07-18T17:30:00+09:00
+lastmod: 2022-07-18T17:30:00+09:00
+publishDate: 2022-07-18T17:30:00+09:00
 ---
 
 　以前から目をつけていたRazerのワイヤレステンキーレスキーボード「BlackWidow V3 Mini HyperSpeed」の[グリーンスイッチ・日本語配列モデル](https://kakaku.com/item/K0001357648/)だけがなぜか安く販売されていたので買ってみました。数週間使ってみたので簡単なレビューです。
 
-　ちなみに私のキーボード環境ですが、昨年Razerのテンキーレスキーボード「Huntsman Mini」を導入し（[昨年のブログ記事](/2021/05/05/use-razer-huntsman-mini-on-macos]）、仕事用キーボードとしてはこのHuntsman Mini、私的作業用キーボードとしてはApple純正のMagic Keyboardという体制でした。Magic Keyboardのキー配置は自分的に理想的な配置であり、キータッチもそこまで悪くはないため今まで特に変える理由はなかったのですが、最近私的作業用メインマシンをiMacからWindowsのデスクトップPCに切り替えた関係でキーボードを探していたタイミングでこの値下げを見つけてしまい、渡りに船と買ってしまったという流れです。
+　ちなみに私のキーボード環境ですが、昨年Razerのテンキーレスキーボード「Huntsman Mini」を導入し（[昨年のブログ記事](/2021/05/05/use-razer-huntsman-mini-on-macos)）、仕事用キーボードとしてはこのHuntsman Mini、私的作業用キーボードとしてはApple純正のMagic Keyboardという体制でした。Magic Keyboardのキー配置は自分的に理想的な配置であり、キータッチもそこまで悪くはないため今まで特に変える理由はなかったのですが、最近私的作業用メインマシンをiMacからWindowsのデスクトップPCに切り替えた関係でキーボードを探していたタイミングでこの値下げを見つけてしまい、渡りに船と買ってしまったという流れです。
 
 　ちなみにMagic KeyboardはWindowsでもBluetoothキーボードとして利用できるのですが、一部のキーボードを有効に利用するためには別途Windowsにツール等をインストールして設定する必要があるのと、このキーボードはiMacの付属品でiMacを処分（売却）する際に一緒に手放す必要があるため、せっかくなので別のキーボードを買おうかなと思っていた状況でした。
 
