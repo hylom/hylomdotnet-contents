@@ -2,8 +2,9 @@
 slug: powershell-the-first-step
 title: PowerShellはじめの一歩
 date: 2023-01-02T17:50:00+09:00
-lastmod: 2023-01-02T17:50:00+09:00
+lastmod: 2023-01-02T18:38:00+09:00
 publishDate: 2023-01-02T17:50:00+09:00
+tag: [ powershell, windows ]
 ---
 
 　ここ最近、自宅でのメインPCとしてWindows PCを使っています。WindowsのCUI環境と言えば長らくMS-DOSから続く「コマンドプロンプト」だったわけですが、昨今導入されたPowerShellは近代のシェルとして十分な機能を備えており、またWindows TerminalもCUIのためのインターフェイスとしてストレスなく常用できるレベルになっています。
