@@ -1,9 +1,9 @@
 ---
 slug: powershell-the-first-step
 title: PowerShellはじめの一歩
-date: 2023-01-02T16:11:16+09:00
-lastmod: 2023-01-02T16:11:16+09:00
-publishDate: 2023-01-02T16:11:16+09:00
+date: 2023-01-02T17:50:00+09:00
+lastmod: 2023-01-02T17:50:00+09:00
+publishDate: 2023-01-02T17:50:00+09:00
 draft: true
 ---
 
