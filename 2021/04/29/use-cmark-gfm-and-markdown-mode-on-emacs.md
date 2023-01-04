@@ -5,6 +5,8 @@ tag: [ web, html5, emacs ]
 date: 2021-04-29T15:15:00+09:00
 lastmod: 2021-04-29T15:15:00+09:00
 publishDate: 2021-04-29T15:15:00+09:00
+thumbnail: markdown-preview.png
+thumbnailAlt: markdown-preview-modeの実行例
 ---
 
 　最近Markdownで文章を書くことが増えているので色々と環境を整えたのですが、GitHubが独自に拡張した文法をサポートするMarkdownコンパイラの[cmark-gfm](https://github.com/github/cmark-gfm)とEmacsの`markdown-mode`を組み合わせようとしたら色々とハマったので対処方法をメモしておきます。
@@ -62,7 +64,8 @@ cmark-gfm:
 
 ## markdown-preview-modeを使う
 
-![markdown-preview-mode](/2021/04/29/markdown-preview.png "markdown-preview-modeの実行例")
+![markdown-preview-mode](markdown-preview.png "markdown-preview-modeの実行例")
 
 　ついでに`markdown-preview-mode`を利用すると、こんな感じでリアルタイムでレンダリング結果をプレビューできてとても便利です。こちらも`M-x package-list-packages`でインストールできます。
+
 

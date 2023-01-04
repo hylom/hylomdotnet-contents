@@ -5,6 +5,8 @@ tag: [ keyboard, emacs ]
 date: 2022-07-18T17:30:00+09:00
 lastmod: 2022-07-18T17:30:00+09:00
 publishDate: 2022-07-18T17:30:00+09:00
+thumbnail: blackwidow_mini.jpeg
+thumbnailAlt: Razer BlackWidow V3 Mini HyperSpeedパッケージとキーボード本体
 ---
 
 　以前から目をつけていたRazerのワイヤレステンキーレスキーボード「BlackWidow V3 Mini HyperSpeed」の[グリーンスイッチ・日本語配列モデル](https://kakaku.com/item/K0001357648/)だけがなぜか安く販売されていたので買ってみました。数週間使ってみたので簡単なレビューです。
@@ -13,7 +15,7 @@ publishDate: 2022-07-18T17:30:00+09:00
 
 　ちなみにMagic KeyboardはWindowsでもBluetoothキーボードとして利用できるのですが、一部のキーボードを有効に利用するためには別途Windowsにツール等をインストールして設定する必要があるのと、このキーボードはiMacの付属品でiMacを処分（売却）する際に一緒に手放す必要があるため、せっかくなので別のキーボードを買おうかなと思っていた状況でした。
 
-![Razer BlackWidow V3 Mini HyperSpeedパッケージとキーボード本体](/2022/07/18/blackwidow_mini.jpeg "Razer BlackWidow V3 Mini HyperSpeedパッケージとキーボード本体")
+![Razer BlackWidow V3 Mini HyperSpeedパッケージとキーボード本体](blackwidow_mini.jpeg "Razer BlackWidow V3 Mini HyperSpeedパッケージとキーボード本体")
 
 
 ## コンパクトではあるもののキー配列や筐体などで気になるポイントあり
@@ -22,7 +24,7 @@ publishDate: 2022-07-18T17:30:00+09:00
 
 　一方で、これらのキーを追加したうえでコンパクトな筐体にするため、一部のキー配列が圧縮されているのは残念なところです。具体的には、キーボードの左Ctrlキーおよび左Altキー、左Shiftキーの幅が若干小さくなっており、その分その段のほかのキーが左側に寄っています。個人的にはそこまで気になるレベルではないのですが、神経質な人は気になるかもしれません。また、左AltキーがWindowsキーよりも小さくなっているのですが、個人的にはWindowsキーよりもAltキーのほうが多用するため、幅を小さくするならWindowsキーのほうを小さくして欲しかったところです。
 
-![Razer BlackWidow V3 Mini HyperSpeedとRazer Huntsman Mini](/2022/07/18/diff.jpeg "Razer BlackWidow V3 Mini HyperSpeedとRazer Huntsman Mini")
+![Razer BlackWidow V3 Mini HyperSpeedとRazer Huntsman Mini](diff.jpeg "Razer BlackWidow V3 Mini HyperSpeedとRazer Huntsman Mini")
 
 
 　ちなみに、このキー配列問題は日本語配列バージョンのみの問題のようで、[RazerのWebサイトに掲載されている製品写真](https://www2.razer.com/jp-jp/gaming-keyboards-keypads/razer-blackwidow-v3-mini-hyperspeed)を見る限り、英語配列バージョンでは右Shiftキー、右altキー、右Ctrlキーが短くなりアプリケーションキーが削除されている以外はキー配列の差異はないように見えます。
@@ -56,9 +58,9 @@ publishDate: 2022-07-18T17:30:00+09:00
 
 　「これがHHKB Lite 2」「Razer Huntsman Mini」「Razer BlackWidow V3 Mini HyperSpeed」「全部同じじゃないですか！」という感じでこち亀コラ画像を作れそうな勢いですが、同じに見えないコンパクトキーボードも持っていたりします。Appleのやつとか、MSのやつとか。
 
-![歴代キーボード3機種](/2022/07/18/diff_hhkb.jpeg "歴代キーボード3機種")
+![歴代キーボード3機種](diff_hhkb.jpeg "歴代キーボード3機種")
 
-![MSのコンパクトキーボード](/2022/07/18/diff_ms.jpeg "MSのコンパクトキーボード")
+![MSのコンパクトキーボード](diff_ms.jpeg "MSのコンパクトキーボード")
 
 　とはいえどれも100％満足しているわけではなく、まだまだ新製品が出たら買ってしまう可能性があります。自作すれば良いという話もありますが、ワイヤレスはバッテリーの関係で自作が面倒くさいのですよね……。
 

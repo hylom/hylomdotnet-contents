@@ -5,6 +5,8 @@ tag: [ web, api ]
 date: 2020-10-25T20:00:00+09:00
 lastmod: 2020-10-25T20:00:00+09:00
 publishDate: 2020-10-25T20:00:00+09:00
+thumbnail: history_stack.png
+thumbnailAlt: 履歴スタックのイメージ
 ---
 
 仕事でWebブラウザのHistory APIに関する質問を受けたのですが、意外と分かりにくいのでここでまとめておきます。
@@ -17,7 +19,7 @@ Webブラウザ上では、閲覧履歴はスタック（本記事では「履�
 
 Aタグなどであるページから別のページに遷移した場合、履歴スタック上の現在位置よりも先にある履歴項目が削除され、続いて履歴スタックの先頭ににそのURLを含む新たな履歴項目が追加されます。
 
-<img src="/img/blog/2020/10/history_stack.png" width="500" height="300" alt="履歴スタックのイメージ">
+![履歴スタックのイメージ](history_stack.png)
 
 ### History APIとは
 

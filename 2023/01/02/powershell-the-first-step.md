@@ -5,6 +5,8 @@ date: 2023-01-02T17:50:00+09:00
 lastmod: 2023-01-02T18:38:00+09:00
 publishDate: 2023-01-02T17:50:00+09:00
 tag: [ powershell, windows ]
+thumbnail: terminal_conf.png
+thumbnailAlt: 「既定のプロファイル」設定
 ---
 
 　ここ最近、自宅でのメインPCとしてWindows PCを使っています。WindowsのCUI環境と言えば長らくMS-DOSから続く「コマンドプロンプト」だったわけですが、昨今導入されたPowerShellは近代のシェルとして十分な機能を備えており、またWindows TerminalもCUIのためのインターフェイスとしてストレスなく常用できるレベルになっています。
@@ -45,7 +47,7 @@ SerializationVersion           1.1.0.1
 
 　前述のように、Microsoft StoreからPowerShell 7系をインストールしたあともPowerShell 5.1はシステムにそのまま残されています。そのため、Windows Terminalを起動した際にデフォルトのシェルとしてPowerShell 7系を利用するためには、Windows Terminalの設定を明示的に変更する必要があります。PowerShell 7系をインストールすると「PowerShell」というプロファイルがWindows Terminalに追加されるので、これを既定のプロファイルに設定しておきましょう。
 
-![「既定のプロファイル」設定](/2023/01/02/terminal_conf.png "「既定のプロファイル」設定")
+![「既定のプロファイル」設定](terminal_conf.png "「既定のプロファイル」設定")
 
 ## コマンドを確認する
 
@@ -205,4 +207,4 @@ Set-PSReadlineKeyHandler -Key 'Ctrl+w' -Function Cut
 
 　このプロファイルでPowerShell 7系を利用するには、まずPowerShell 7系のプロファイルから「コマンドライン」（「"C:\Users\＜ユーザー名＞\AppData\Local\Microsoft\WindowsApps\Microsoft.PowerShell_8＜ユニーク文字列＞\pwsh.exe"）文字列をコピーし、Develper PowerShell用プロファイルのコマンドライン文字列内の「powershell.exe」をこの文字列で置き換えればOKです。
 
-![「Developer PowerShell」のコマンドライン設定](/2023/01/02/dev_sh.png "「Developer PowerShell」のコマンドライン設定")
+![「Developer PowerShell」のコマンドライン設定](dev_sh.png "「Developer PowerShell」のコマンドライン設定")
