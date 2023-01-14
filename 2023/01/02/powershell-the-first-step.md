@@ -201,6 +201,20 @@ Set-PSReadlineKeyHandler -Key 'Ctrl+y' -Function Paste
 Set-PSReadlineKeyHandler -Key 'Ctrl+w' -Function Cut
 ```
 
+　（以下、2023-01-14 追記）PowerShellはTabキーによる補完に関しても挙動をカスタマイズ可能です。デフォルトではTabキーで最初に見つかった補完候補を自動入力する（タブを連打することでほかの候補に次々とトグルされる）という挙動で、またCtrl＋Spaceでメニューを表示して補完候補を選択する、という挙動になっています。
+
+　Tabキーでbashのように補完候補を表示する挙動に変更するには、次のコマンドを上記のファイルに追加します。
+
+```
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
+```
+
+　また、次のように設定することでCtrl＋Spaceのメニュー式補完をTabキーで呼び出すことができます。
+
+```
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+```
+
 ## Visual StudioのDeveloper PowerShellをバージョン7系にする
 
 　Visual Studioをインストールしていると、Windows Terminalのプロファイルとして「Developer PowerShell for ＜Visual Studioのバージョン＞」というものが自動的に追加されます。これはその名の通り、Visual Studioの各ツールを利用するための設定がされた環境でPowerShellを起動するためのプロファイルですが、PowerShell 7系をインストールしても、デフォルトではこのプロファイルはPowerShell 5系を引き続き利用するようです。
