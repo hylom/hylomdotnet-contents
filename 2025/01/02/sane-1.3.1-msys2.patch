@@ -1,0 +1,143 @@
+--- a/backend/test.c
++++ b/backend/test.c
+@@ -1586,7 +1586,11 @@ finish_pass (Test_Device * test_device)
+ 
+       DBG (2, "finish_pass: terminating reader process %ld\n",
+ 	   (long) test_device->reader_pid);
++#ifndef _WIN32
++      // Wait completion of the thread without killing in MSYS2 environment
++      // because sanei_thread_kill causes crash if pipe is active...
+       sanei_thread_kill (test_device->reader_pid);
++#endif
+       pid = sanei_thread_waitpid (test_device->reader_pid, &status);
+       if (!sanei_thread_is_valid (pid))
+ 	{
+@@ -3113,8 +3117,12 @@ sane_set_io_mode (SANE_Handle handle, SANE_Bool non_blocking)
+     }
+   if (test_device->val[opt_non_blocking].w == SANE_TRUE)
+     {
++#ifdef _WIN32
++      if (non_blocking) 
++#else
+       if (fcntl (test_device->pipe,
+ 		 F_SETFL, non_blocking ? O_NONBLOCK : 0) < 0)
++#endif
+ 	{
+ 	  DBG (1, "sane_set_io_mode: can't set io mode");
+ 	  return SANE_STATUS_INVAL;
+diff --git a/configure.ac b/configure.ac
+index b1520d494..1fe3f5b77 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -277,7 +277,7 @@ dnl ***********************************************************************
+ dnl Functions for which we provide an implementation if missing
+ AC_CONFIG_LIBOBJ_DIR([lib])
+ AC_FUNC_ALLOCA
+-AC_REPLACE_FUNCS([getenv inet_ntop inet_pton sigprocmask \
++AC_REPLACE_FUNCS([getenv sigprocmask \
+     sleep snprintf strcasestr strdup strndup strsep syslog usleep \
+     vsyslog])
+ AS_IF([test x != x$ALLOCA],
+@@ -301,6 +301,7 @@ dnl SOCKET_LIBS so set LIBS temporarily.
+ save_LIBS="$LIBS"
+ LIBS="$LIBS $SOCKET_LIBS"
+ AC_CHECK_FUNCS(inet_addr inet_aton inet_ntoa)
++AC_REPLACE_FUNCS([inet_ntop inet_pton])
+ LIBS="$save_LIBS"
+ 
+ if test "$ac_cv_header_be_kernel_OS_h" = "yes" ; then
+diff --git a/frontend/scanimage.c b/frontend/scanimage.c
+index ff5315744..cee615285 100644
+--- a/frontend/scanimage.c
++++ b/frontend/scanimage.c
+@@ -2700,7 +2700,7 @@ List of available devices:", prog_name);
+           ofp = stdout;
+           if (output_file != NULL)
+             {
+-              ofp = fopen(output_file, "w");
++              ofp = fopen(output_file, "wb");
+               if (ofp == NULL)
+                 {
+                   fprintf(stderr, "%s: could not open output file '%s', "
+@@ -2816,7 +2816,7 @@ List of available devices:", prog_name);
+ #endif
+ 	      if (ofp == NULL)
+ 	        {
+-	          ofp = fopen (part_path, "w");
++	          ofp = fopen (part_path, "wb");
+ #ifdef HAVE_LIBJPEG
+ 	          if (output_format == OUTPUT_PDF && ofp != NULL)
+ 	             init_pdf = SANE_TRUE;
+diff --git a/include/sane/sanei_backend.h b/include/sane/sanei_backend.h
+index db4d7b80e..a140edf41 100644
+--- a/include/sane/sanei_backend.h
++++ b/include/sane/sanei_backend.h
+@@ -85,20 +85,47 @@
+ # endif
+ 
+ # define sigset_t               int
+-# define sigemptyset(set)       do { *(set) = 0; } while (0)
++# define sigemptyset(set)       (*(set) = 0)
+ # define sigfillset(set)        do { *(set) = ~0; } while (0)
+ # define sigaddset(set,signal)  do { *(set) |= sigmask (signal); } while (0)
+ # define sigdelset(set,signal)  do { *(set) &= ~sigmask (signal); } while (0)
+-# define sigaction(sig,new,old) sigvec (sig,new,old)
+ 
++# ifdef _WIN32
++/* sigaction is not available in MSYS2 environment,
++   so emulate with signal() API. */
++#  define SIGUSR1 10
++#  define SIGALRM 14
++#  define SIGCHLD 17
++struct w_sigaction {
++  void (*sa_handler)(int);
++  int sa_flags;
++  sigset_t sa_mask;
++};
++#  define SIGACTION w_sigaction
++#  define sigaction(sig,new,old) (((new) && (new)->sa_handler) ? (signal((sig), (new)->sa_handler) != SIG_ERR) : -1)
++
++/* emulate sigmask like BSD, but this is meaningless because
++ * sigprocmask do nothing in WIN32 env.
++ */
++#  define sigmask(m) (1U << ((m)-1))
++# else
++# define sigaction(sig,new,old) sigvec (sig,new,old)
+   /* Note: it's not safe to just declare our own "struct sigaction" since
+      some systems (e.g., some versions of OpenStep) declare that structure,
+      but do not implement sigprocmask().  Hard to believe, aint it?  */
+-# define SIGACTION              sigvec
++#  define SIGACTION              sigvec
++# endif /* _WIN32 */
++
+ # define SIG_BLOCK      1
+ # define SIG_UNBLOCK    2
+ # define SIG_SETMASK    3
+ #endif /* !HAVE_SIGPROCMASK */
++
++/* Pipe for MSYS2 environment */
++#ifdef _WIN32
++# define pipe(pipefd) _pipe((pipefd), 4096, _O_BINARY)
++#endif /* _WIN32 */
++
+ /* @} */
+ 
+ 
+@@ -173,3 +200,4 @@ typedef union
+ Option_Value;
+ #define SANE_OPTION 1
+ #endif
++
+diff --git a/sanei/sanei_init_debug.c b/sanei/sanei_init_debug.c
+index 690cc2eca..3fad4e343 100644
+--- a/sanei/sanei_init_debug.c
++++ b/sanei/sanei_init_debug.c
+@@ -154,7 +154,7 @@ sanei_debug_msg
+           struct tm *t;
+ 
+           gettimeofday (&tv, NULL);
+-          t = localtime (&tv.tv_sec);
++          t = _localtime32 (&tv.tv_sec);
+ 
+           fprintf (stderr, "[%02d:%02d:%02d.%06ld] [%s] ", t->tm_hour, t->tm_min, t->tm_sec, tv.tv_usec, be);
+           vfprintf (stderr, fmt, ap);
